@@ -1,0 +1,1188 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Events and Schedules</title>
+   <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i,900" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Amita' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Beth Ellen' rel='stylesheet'>
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+
+   <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/jquery-sticky/jquery.sticky.js"></script>
+  <script src="assets/vendor/venobox/venobox.min.js"></script>
+  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="assets/vendor/counterup/counterup.min.js"></script>
+  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <style type="text/css">
+    body{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+      overflow-x: hidden;
+    }
+    
+main { 
+  background-image: url(assets/img/images/headingimage.jpeg); 
+  background-repeat: repeat; 
+  -webkit-background-clip: text; 
+  -webkit-text-fill-color: transparent; 
+  margin-bottom: 100px;
+  font-size: 100px; 
+  text-align: center; 
+  font-weight: bold; 
+  text-transform: uppercase; 
+  font-family: 'Steelfish Rg', 'helvetica neue', 
+               helvetica, arial, sans-serif; 
+  font-weight: 800; 
+  -webkit-font-smoothing: antialiased; 
+} 
+
+@media screen and (max-width: 837px){
+  main{
+    font-size: 70px;
+     margin-bottom: 70px;
+  }
+}
+
+@media screen and (max-width: 590px){
+  main{
+    font-size: 50px;
+     margin-bottom: 50px;
+
+  }
+}
+@media screen and (max-width: 720px){
+  main{
+    margin-top: 70px;
+  }
+}
+
+@media screen and (max-width: 430px){
+  main{
+    font-size: 30px;
+     margin-bottom: 30px;
+  }
+}
+#hero {
+  width: 100%;
+  height: calc(100vh - 114px);
+  padding: 0;
+  overflow: hidden;
+}
+
+#hero .carousel-item {
+  width: 100%;
+  height: calc(100vh - 114px);
+  background-size: cover;
+  background-position: top right;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+#hero .carousel-item::before {
+  content: '';
+  background-color: rgba(13, 30, 45, 0.6);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+
+#hero .carousel-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+}
+
+#hero .carousel-content {
+  text-align: left;
+}
+
+@media (max-width: 992px) {
+  #hero, #hero .carousel-item {
+    height: calc(100vh - 70px);
+  }
+  #hero .carousel-content.container {
+    padding: 0 50px;
+  }
+}
+
+#hero h2 {
+  color: #fff;
+  margin-bottom: 30px;
+  font-size: 48px;
+  font-weight: 900;
+}
+
+#hero p {
+  width: 80%;
+ 
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+  color: #fff;
+}
+@media screen and (max-width: 385px){
+  #hero p{
+    font-size: 13px;
+    width: 80%;
+ 
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+  color: #fff;
+  }
+}
+@media screen and (max-width: 330px){
+  #hero p{
+    font-size: 12px;
+    width: 80%;
+ 
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+  color: #fff;
+  }
+}
+#hero .carousel-inner .carousel-item {
+  transition-property: opacity;
+  background-position: center top;
+}
+
+#hero .carousel-inner .carousel-item,
+#hero .carousel-inner .active.carousel-item-left,
+#hero .carousel-inner .active.carousel-item-right {
+  opacity: 0;
+}
+
+#hero .carousel-inner .active,
+#hero .carousel-inner .carousel-item-next.carousel-item-left,
+#hero .carousel-inner .carousel-item-prev.carousel-item-right {
+  opacity: 1;
+  transition: 0.5s;
+}
+
+#hero .carousel-inner .carousel-item-next,
+#hero .carousel-inner .carousel-item-prev,
+#hero .carousel-inner .active.carousel-item-left,
+#hero .carousel-inner .active.carousel-item-right {
+  left: 0;
+  transform: translate3d(0, 0, 0);
+}
+
+#hero .carousel-control-prev, #hero .carousel-control-next {
+  width: 10%;
+}
+
+#hero .carousel-control-next-icon, #hero .carousel-control-prev-icon {
+  background: none;
+  font-size: 48px;
+  line-height: 1;
+  width: auto;
+  height: auto;
+}
+
+#hero .carousel-indicators li {
+  cursor: pointer;
+}
+
+#hero .btn-get-started {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 32px;
+  border-radius: 5px;
+  transition: 0.5s;
+  line-height: 1;
+  margin: 10px;
+  color: #fff;
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+  border: 0;
+  background: #428bca;
+}
+
+#hero .btn-get-started:hover {
+  background: #1c5c93;
+}
+
+@media (max-width: 768px) {
+  #hero h2 {
+    font-size: 28px;
+  }
+}
+
+@media (min-width: 1024px) {
+  #hero p {
+    width: 60%;
+  }
+  #hero .carousel-control-prev, #hero .carousel-control-next {
+    width: 5%;
+  }
+}
+
+@media screen and (max-width: 350px){
+  #ani{
+    width: 250px;
+    height: 270px;
+  }
+}
+
+#servicesdesc{
+  font-size: 20px;
+}
+@media screen and (max-width: 500px){
+  #servicesdesc{
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 400px){
+  #servicesdesc{
+    font-size: 15px;
+  }
+}
+
+ .slider {
+        width: 100%;
+        height: 300px;
+        background-color: yellow;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0px;
+        text-align: center;
+        overflow: hidden;
+      }
+      .image-container {
+        width: 1500px;
+        background-color: pink;
+        height: 300px;
+        clear: both;
+        position: relative;
+        -webkit-transition: left 2s;
+        -moz-transition: left 2s;
+        -o-transition: left 2s;
+        transition: left 2s;
+      }
+      .slide {
+        float: left;
+        margin: 0px;
+        padding: 0px;
+        position: relative;
+      }
+      #slide-1:target ~ .image-container {
+        left: 0px;
+      }
+      #slide-2:target ~ .image-container {
+        left: -500px;
+      }
+      #slide-3:target ~ .image-container {
+        left: -1000px;
+      }
+      .buttons {
+        position: relative;
+        top: -20px;
+      }
+      .buttons a {
+        display: inline-block;
+        height: 15px;
+        width: 15px;
+        border-radius: 50px;
+        background-color: lightgreen;
+      }
+.mySlides {display: none;}
+img {vertical-align: middle;}
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 30px;
+  padding: 8px 12px;
+  padding-bottom: 0px;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 0s;
+  animation-name: fade;
+  animation-duration: 4s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: 1} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: 1} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 20px;
+    font-weight: bolder;
+    color: #fff;}
+}
+  </style>
+</head>
+<body>
+  <style>
+  
+
+.menu-wrap{
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 2;
+
+}
+
+.toggler{
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  width: 60px;
+  height: 60px;
+  z-index: 3;
+  opacity: 0;
+  cursor: pointer;
+
+}
+
+.hamburger{
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  width: 60px;
+  height: 60px;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: darkblue;
+    animation: pulse1 2s linear infinite;
+}
+
+.hamburger>div{
+  position: absolute;
+  width: 60%;
+  height: 3px;
+  border-radius: 1.5px;
+  background-color: #fff;
+  transition: .4s;
+}
+
+.hamburger>div:before{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  border-radius: 1.5px;
+  background-color: #fff;
+  top: -10px;
+  left: 0;
+  transition: .4s;
+}
+
+.hamburger>div:after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  border-radius: 1.5px;
+  background-color: #fff;
+  top: 10px;
+  left: 0;
+  transition: .4s;
+}
+
+.toggler:checked + .hamburger>div{
+  transform: rotate(135deg);
+}
+
+.toggler:checked:hover + .hamburger>div{
+  transform: rotate(225deg);
+}
+
+.toggler:checked + .hamburger>div:before, .toggler:checked + .hamburger>div:after{
+  top: 0;
+  transform: rotate(90deg);
+}
+
+.menu{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  transition: .6s;
+}
+
+.menu > div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-150%) translateX(-50%);
+    width: 1600px;
+    height: 1600px;
+    border-radius: 100%;
+    background-color: darkblue;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: .6s;
+}
+
+.menu > div > div{
+  max-width: 90vw;
+  max-height: 200vh;
+  opacity: 0;
+  transition: .6s;
+  list-style-type: none;
+}
+.menu > div > div > ul {
+  list-style-type: none;
+}
+.menu > div > div > ul > li{
+  list-style-type: none;
+  font-size: 40px;
+}
+
+.menu > div > div > ul > li > a{
+  text-decoration: none;
+  color: #fff;
+  list-style-type: none;
+  font-weight: 550;
+  text-transform: uppercase;
+  margin: .5rem;
+  transition: .3s;
+  font-size: 40px;
+  display: inline-block;
+}
+
+.menu > div > div > ul > li > a:hover{
+  color: blue;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.toggler:checked ~ .menu{
+  visibility: visible;
+}
+
+.toggler:checked ~ .menu > div{
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.toggler:checked ~ .menu > div > div{
+  opacity: 1;
+}
+
+@keyframes pulse{
+  0%{
+    box-shadow: 0 0 0 0 rgba(2, 117, 216, 0.99);
+  }
+  70%{
+    box-shadow: 0 0 0 1rem rgba(2, 117, 216, 0);
+  }
+  100%{
+    box-shadow: 0 0 0 0 rgba(2, 117, 216, 0);
+  }
+}
+@keyframes pulse1{
+  0%{
+    box-shadow: 0 0 0 0 rgba(0,0,139, 0.99);
+  }
+  70%{
+    box-shadow: 0 0 0 1rem rgba(0,0,139, 0);
+  }
+  100%{
+    box-shadow: 0 0 0 0 rgba(0,0,139, 0);
+  }
+}
+.ideaboat{
+  font-size: 50px;
+  margin-left: 0;
+}
+@media screen and (max-width: 500px){
+  .ideaboat{
+    font-size: 30px;
+  }
+  .menu{
+    width: 100%;
+  }
+  ul li {
+    margin-left: -20%;
+  }
+}
+@media screen and (max-width: 1000px){
+ 
+  ul li {
+    margin-left: -20%;
+  }
+}
+
+</style>
+
+
+<div class="menu-wrap">
+    <input type="checkbox" class="toggler">
+    <div class="hamburger">
+      <div></div>
+    </div>
+    <div class="menu text-center w-100">
+      <div>
+  
+          <ul style="list-style: none;font-size: 40px;font-family: 'arial';" class="">
+            <li><a href="index.php" style="font-style: 40px;text-decoration: none;color: #fff;">Home</a></li>
+            <li><a href="services.php" style="font-style: 40px;text-decoration: none;color: #fff;">Services</a></li>
+            <li><a href="blog.php" style="font-style: 40px;text-decoration: none;color: #fff;">Blogs</a></li>
+            <li><a href="about.php" style="font-style: 40px;text-decoration: none;color: #fff;">About Us</a></li>
+            <li><a href="events.php" style="font-style: 40px;text-decoration: none;color: #fff;">Events</a></li>
+            
+          </ul>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+    
+
+
+
+  <main class=""> Our Events </main>
+
+
+    
+    <!--========================================================= slide for events ==================================================-->
+
+ 
+ <div class="slideshow-container" data-aos="fade-up" data-aos-delay="100">
+
+<div class="mySlides">
+  <div class="numbertext">1 / 7</div>
+  <img src="assets/img/events/e1.png" style="width:100%">
+ 
+</div>
+
+<div class="mySlides ">
+  <div class="numbertext">2 / 7</div>
+  <img src="assets/img/events/e2.png" style="width:100%">
+ 
+</div>
+
+<div class="mySlides ">
+  <div class="numbertext">3 / 7</div>
+  <img src="assets/img/events/e3.png" style="width:100%">
+ 
+</div>
+
+<div class="mySlides ">
+  <div class="numbertext">4 / 7</div>
+  <img src="assets/img/events/e4.png" style="width:100%">
+  
+</div>
+
+<div class="mySlides ">
+  <div class="numbertext">5 / 7</div>
+  <img src="assets/img/events/e5.png" style="width:100%">
+  
+</div>
+
+<div class="mySlides ">
+  <div class="numbertext">6 / 7</div>
+  <img src="assets/img/events/e6.png" style="width:100%">
+  
+</div>
+
+<div class="mySlides ">
+  <div class="numbertext">7 / 7</div>
+  <img src="assets/img/events/e7.png" style="width:100%">
+  
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center" data-aos="fade-up" data-aos-delay="100">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+ <!-- Carousel
+================================================== -->
+
+
+
+
+
+  
+
+
+<!--========================================================= end slide for events ==================================================-->
+
+ <div class="container my-5" style="">
+
+
+  <div class="row text-center">
+
+     <!-- ------------------------------------  Event 1 ------------------------------------------>
+<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+  <section id="webdevelopment" style="">
+     <div class="section-title" data-aos="fade-up" data-aos-delay="100">
+        <h2>Digital Business Card</h2>
+      </div>
+
+      <div class=" mt-5">
+        <div class=" text-center my-2" style="color: black;font-size: 22px;font-size: 22px;word-spacing: 5px;" data-aos="fade-up" data-aos-delay="100">
+          <img src="assets/img/images/event6.png" height="300px" width="300px" id="ani" class="mb-4">
+        </div>
+
+        <div class="my-2" data-aos="fade-up" data-aos-dealy="100" style="color: black;word-spacing: 5px;text-align:justify" id="servicesdesc">
+        Digital Business Cards are really more of a necessity now as everyone uses social media. It's a one time cost that reduces the lifetime physical card costs. So sign up now and get yours done right away!
+     
+        <div class=" text-center"  data-aos="fade-up" data-aos-dealy="100">
+         
+          <span><a href="enquiryform.html?page=<?php echo $page; ?>" class=" btn btn-dark text-light mt-3">Enquire Now</a></span>
+        </div>
+      </div>
+         </div>
+    
+</section>
+</div>
+<!-------------------------- End for event1 ---------------------------------------------------->
+
+
+
+    <!-------------------------- For Event 2 ---------------------------------------------------->
+     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+    <section  style="">
+      <div class="section-title" data-aos="fade-up" data-aos-dealy="100">
+        <h2 style="font-size: 30px">IdeaBoat Internship Programs</h3>
+      </div>
+
+      <div class="" data-aos="fade-up" data-aos-dealy="100">
+        <div class=" text-center my-3" style="color: black;font-size: 22px;">
+          <img src="assets/img/events/1.png" height="300px" width="300px" id="ani" class="mb-5">
+        </div>
+        <div class=" my-2" data-aos="fade-up" data-aos-dealy="100" style="color: black;word-spacing: 5px;text-align:justify" id="servicesdesc">
+          We are looking for interns for our digital marketing sales department. Showcase your marketing skills with us.
+        <div class=" text-center my-2 " data-aos="fade-up" data-aos-dealy="100">
+          <span><a href="enquiryform.html?page=<?php echo $page; ?>" class=" btn btn-dark text-light mt-3" name="submit">Enquire Now</a></span>
+        </div>
+        
+      </div>
+      </div>
+    
+    
+  </section>
+</div>
+
+<!-------------------------- End for Event2 ---------------------------------------------------->
+  
+
+
+<!-------------------------- For Event3 ---------------------------------------------------->
+<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+<section id="graphicdesigning" style="" data-aos="fade-up" data-aos-dealy="100">
+      <div class="section-title">
+        <h2>Uplift India</h2>
+      </div>
+
+      <div class=" mt-5" data-aos="fade-up" data-aos-dealy="100">
+
+        <div class=" text-center mb-3" data-aos="fade-up" data-aos-dealy="100" style="color: black;font-size: 22px;">
+          <img src="assets/img/images/upliftindia.png" height="300px" width="300px" id="ani" class="mb-3">
+        
+        
+        </div>
+        <div class="my-2" data-aos="fade-up" data-aos-dealy="100" style="color: black;word-spacing: 5px;text-align:justify" id="servicesdesc">
+        Your greatness is not what you have, it’s what you give.
+We believe in making a difference in society so for every deal we make, we donate 20% for good cause not because we want to make a change but we want to 'Be the change'!<br>
+<b>Note:</b> 
+You can volunteer for the activity! You can also join for charity purpose itself.
+          <div class=" text-center" data-aos="fade-up" data-aos-dealy="100">
+         <span><a href="enquiryform.html?page=<?php echo $page; ?>" class=" btn btn-dark text-light mt-3" name="submit">Enquire Now</a></span>
+          </div>
+        </div>
+        
+      </div>
+      
+    
+    
+</section>
+</div>
+
+<!-----===============================================End event3====================================================================-->
+
+
+ 
+
+
+ <!-- ------------------------------------  event 4 ------------------------------------------>
+<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+  <section id="appdevelopment" style=""  data-aos="fade-up" data-aos-dealy="100">
+     <div class="section-title">
+        <h2>#StayConnected</h2>
+      </div>
+
+      <div class="mt-5"  data-aos="fade-up" data-aos-dealy="100">
+        <div class=" text-center my-2" data-aos="fade-up" data-aos-dealy="100" style="color: black;font-size: 22px;">
+          <img src="assets/img/events/3.png" height="300px" width="280px" id="ani" class="mb-4">
+       
+      </div>
+       <div class=" my-2" data-aos="fade-up" data-aos-dealy="100" style="color: black;word-spacing: 5px;text-align:justify" id="servicesdesc">
+         
+        We aim at empowering businesses of all sizes with the tools they need to succeed online. From cutting-edge designs and strategies to the trends of tomorrow, we ensure you with the best of our service. 
+Steal the insider show and get to know what goes on at IdeaBoat. Join our channel here
+
+          <div class="col-12 text-center">
+           
+            <span><a href="enquiryform.html?page=<?php echo $page; ?>" class=" btn btn-dark text-light mt-3" name="submit">Enquire Now</a></span>
+          </div>
+        </div>
+
+        
+    </div>
+      
+    
+   
+
+  
+</section>
+
+</div>
+<!-- -============================================== End for event 4 ===================================================------->
+<!-- ------------------------------------  Event 5 ------------------------------------------>
+<!-- <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 text-center">
+  <section id="webdevelopment" style="" data-aos="fade-up" data-aos-dealy="100">
+      <div class="section-title">
+        <h2>Internship Programs</h2>
+      </div>
+
+      <div class="mt-5"  data-aos="fade-up" data-aos-dealy="100">
+        <div class=" text-center my-2" style="color: black;font-size: 22px;font-size: 22px;word-spacing: 5px;">
+          <img src="assets/img/images/event7.png" height="300px" width="300px" id="ani">
+        </div>
+
+        <div class="text-left my-2" data-aos="fade-up" data-aos-dealy="100" style="color: black;word-spacing: 5px;" id="servicesdesc">
+         All major search engines such as Google and Bing have primary search results, where web pages and other content such as videos, images or local listings are shown and ranked based on what the search engine considers most relevant. 
+
+     
+        <div class="text-center"  data-aos="fade-up" data-aos-dealy="100">
+         
+          <span><a href="enquiryform.html?page=<?php echo $page; ?>" class=" btn btn-dark text-light mt-3" name="submit">Enquire Now</a></span>
+        </div>
+      </div>
+         </div>
+    
+</section>
+</div> -->
+<!-------------------------- End for event5 ---------------------------------------------------->
+
+
+
+
+<!-------------------------- For Event6 ---------------------------------------------------->
+<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+<section id="graphicdesigning" style="" data-aos="fade-up" data-aos-dealy="100">
+      <div class="section-title">
+        <h2>All-in-1 Graphic Package </h2>
+      </div>
+
+      <div class=" mt-5" data-aos="fade-up" data-aos-dealy="100">
+
+        <div class=" text-center my-2" data-aos="fade-up" data-aos-dealy="100" style="color: black;font-size: 22px;">
+          <img src="assets/img/events/2.png" height="300px" width="280px" id="ani">
+        
+        
+        </div>
+        <div class="my-2" data-aos="fade-up" data-aos-dealy="100" style="color: black;word-spacing: 5px;text-align:justify" id="servicesdesc">
+       IdeaBoat provides a complete digital marketing kit to take your business digital at minimal market cost. From Diwali to Dussehra, get all your festival & promotional graphics of the year all at one place. Fill up the form, and we’ll contact you soon!
+          <div class=" text-center" data-aos="fade-up" data-aos-dealy="100">
+         <span><a href="enquiryform.html?page=<?php echo $page; ?>" class=" btn btn-dark text-light mt-3" name="submit">Enquire Now</a></span>
+          </div>
+        </div>
+        
+      </div>
+      
+    
+    
+</section>
+
+</div>
+<!-----===============================================End event6 ====================================================================-->
+
+
+  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+    <section  style="">
+      <div class="section-title">
+        <h2>Coming Soon</h2>
+      </div>
+
+      <div class="mt-5" data-aos="fade-up" data-aos-dealy="100">
+        <div class="text-center" style="color: black;font-size: 22px;">
+          <img src="assets/img/images/event5.png" height="300px" width="280px" id="ani" class="mb-2">
+        </div>
+        <div class="mb-2" data-aos="fade-up" data-aos-dealy="100" style="color: black;word-spacing: 5px;text-align:justify" id="servicesdesc">
+          We're taking our one of the best services online by providing an online based digital card. Now reach out to your targeted audience by sharing them your personalized online digital card link.
+
+        <div class=" text-center my-2 " data-aos="fade-up" data-aos-dealy="100">
+          <span><a href="enquiryform.html?page=<?php echo $page; ?>" class=" btn btn-dark text-light mt-3" name="submit">Enquire Now</a></span>
+        </div>
+        
+      </div>
+      </div>
+    
+    
+</section>
+</div>
+
+<!-------------------------- End for Event7 ---------------------------------------------------->
+
+ <!-- ------------------------------------  Event 8 ------------------------------------------>
+<!-- <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 text-center">
+  <section id="webdevelopment" style="" data-aos="fade-up" data-aos-dealy="100">
+      <p class="text-center" data-aos="fade-up" data-aos-dealy="100" style="-webkit-text-fill-color: rgba(0,0,0,0);font-family: 'Steelfish Rg', 'helvetica neue', helvetica, arial, sans-serif; font-weight: 800;font-size: 35px;
+            background: linear-gradient(lightgreen,green);
+            -webkit-background-clip: text; ">
+        Web Development <br>
+      </p>
+
+      <div class="mt-5"  data-aos="fade-up" data-aos-dealy="100">
+        <div class=" text-center my-2" style="color: black;font-size: 22px;font-size: 22px;font-family: 'Amita';font-weight: bold;word-spacing: 5px;">
+          <img src="assets/img/images/event7.png" height="300px" width="300px" id="ani">
+        </div>
+
+        <div class="text-left my-2" data-aos="fade-up" data-aos-dealy="100" style="color: black;font-size: 22px;font-family: 'Amita';font-weight: bold;word-spacing: 5px;" id="servicesdesc">
+         All major search engines such as Google and Bing have primary search results, where web pages and other content such as videos, images or local listings are shown and ranked based on what the search engine considers most relevant. 
+
+     
+        <div class="text-center"  data-aos="fade-up" data-aos-dealy="100">
+         
+          <span><a href="enquiryform.html" class=" btn btn-success text-light mt-3">Enquire Now</a></span>
+        </div>
+      </div>
+         </div>
+    
+</section>
+</div> -->
+<!-------------------------- End for event8 ---------------------------------------------------->
+    
+   
+
+  
+</section>
+</div>
+
+<!-- -============================================== End for event 8 ===================================================------->
+</div>
+</div>
+
+<a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+
+
+
+
+ <style id='preloader-plus-inline-css'>
+.preloader-plus {
+background-color: #ff9f43;
+ }
+body.complete > *:not(.preloader-plus),.preloader-plus {
+transition-duration: 1000ms,1000ms,0s;
+ }
+.preloader-plus * {
+color: #ffffff;
+ }
+.preloader-plus.complete {
+opacity: 0;
+ transform:  scale(1);
+ transition-delay: 0s,0s,1000ms;
+ }
+}
+.preloader-plus .prog-bar {
+height: 10px;
+ background-color: #ff9f43;
+ }
+.preloader-plus .prog-bar-bg {
+height: 10px;
+ background-color: #ffffff;
+ }
+.preloader-plus .prog-bar-wrapper {
+middle: 0;
+ padding-middle: 15%;
+ width: 300px;
+ }
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+#scrollPath {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 10px;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+#progressbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 10px;
+  border-radius: 10px;
+  height: 100%;
+  background: linear-gradient(to top, #008aff, #00ffe7);
+  animation: animate 5s linear infinite;
+}
+
+@keyframes animate {
+
+  0%,
+  100% {
+    filter: hue-rotate(0deg);
+  }
+
+  50% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+#progressbar:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, #008aff, #00ffe7);
+  filter: blur(1px);
+  border-radius: 10px;
+}
+
+#progressbar:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, #008aff, #00ffe7);
+  /*filter: blur(30px);*/
+  border-radius: 10px;
+}
+
+
+</style>
+
+<div id="progressbar"></div>
+<div id="scrollPath"></div>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="text/javascript">
+    let progress = document.getElementById('progressbar');
+    let totalHeight = document.body.scrollHeight - window.innerHeight;
+    window.onscroll = function () {
+      let progressHeigth = (window.pageYOffset / totalHeight) * 100;
+      progress.style.height = progressHeigth + "%";
+    }
+  </script>
+  <div class="prog-bar-wrapper middle">
+<div class="prog-bar-bg"></div>
+<div class="prog-bar"></div>
+</div>
+<style type="text/css">
+  #footerset{
+    margin: 0%;
+  }
+  @media screen and  (max-width: 768px){
+    #footerset{
+      margin-left: 15%;
+    }
+  }
+  
+  @media screen and (max-width: 992px){
+    #footerset{
+      margin-left: 0%;
+    }
+  }
+</style>
+
+<footer id="footer" class="mt-5" style="color: white;background-color: black;">
+    <div class="footer-top" style="color: white;background-color: black;">
+      <div class="container" style="color: white;background-color: black;">
+        <div class="row">
+
+          <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 footer-info">
+            <h3>IdeaBoat</h3>
+            <p>
+              12, Rajulpark Soc,Opp AMTS Depo,<br>
+              Sabarmati,Ahmedabad<br><br>
+              <strong>Phone:</strong> +91 83202 09108<br>
+              <strong>Email:</strong> theideaboat0508@gmail.com<br>
+            </p>
+            <div class="social-links mt-3">
+              <a target="blank" href="https://www.facebook.com/IdeaBoat-103159031449758/" class="facebook"><i class="bx bxl-facebook"></i></a>
+              <a target="blank" href="https://instagram.com/theideaboat?igshid=1pifg20qoer5n" class="instagram"><i class="bx bxl-instagram"></i></a>
+              <a target="blank" href="assets/img/images/IdeaBoat.pdf" class="mail" download="download"><i class="bx bx-id-card"></i></a>
+            </div>
+          </div>
+
+          <div class="col-xl-2 col-lg-2 col-md-6 col-sm-12 footer-links" style="">
+            <h4>Useful Links</h4>
+            <ul>
+              <li id="footerset"><i class="bx bx-chevron-right"></i> <a href="index.php">Home</a></li>
+              <li id="footerset"><i class="bx bx-chevron-right"></i> <a href="about.php">About us</a></li>
+              <li id="footerset"><i class="bx bx-chevron-right"></i> <a href="services.php">Services</a></li>
+              <li id="footerset"><i class="bx bx-chevron-right"></i> <a href="events.php">Events</a></li>
+              <li id="footerset"><i class="bx bx-chevron-right"></i> <a href="blog.php">Blog</a></li>
+            </ul>
+          </div>
+
+          <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 footer-links" style="" >
+            <h4>Our Services</h4>
+            <ul>
+              <li id="footerset"><i class="bx bx-chevron-right"></i> <a href="services.php#webdevelopment">Web Design</a></li>
+              <li id="footerset"><i class="bx bx-chevron-right"></i> <a href="services.php#webdevelopment">Web Development</a></li>
+              <li id="footerset"><i class="bx bx-chevron-right"></i> <a href="services.php#graphicdesigning">Product Management</a></li>
+              <li id="footerset"><i class="bx bx-chevron-right"></i> <a href="services.php#graphicdesigning">Digital Card</a></li>
+              <li id="footerset"><i class="bx bx-chevron-right"></i> <a href="services.php#graphicdesigning">Product Catalogue</a></li>
+              <li id="footerset"><i class="bx bx-chevron-right"></i> <a href="services.php#graphicdesigning">Graphic Design</a></li>
+              <li id="footerset"><i class="bx bx-chevron-right"></i> <a href="services.php#graphicdesigning">App Development</a></li>
+              <li id="footerset"><i class="bx bx-chevron-right"></i> <a href="services.php#digitalmarketing">Social Media Marketing</a></li>
+            </ul>
+          </div>
+
+          <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 footer-newsletter" id="newsletter">
+            <h4>Our Newsletter</h4>
+            <p>Subscribe to our newsletter and stay tuned </p>
+            <form action="" method="POST">
+              <input type="email" name="email"><input type="submit" value="Subscribe" name="newsletter">
+            </form>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span style="color: skyblue;font-weight: 500 ">IdeaBoat</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+      
+        Designed by <a href="#">IdeaBoat</a>
+         
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

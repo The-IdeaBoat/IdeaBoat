@@ -1,0 +1,1512 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>About Us</title>
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i,900" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Amita' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Beth Ellen' rel='stylesheet'>
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+
+   <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/jquery-sticky/jquery.sticky.js"></script>
+  <script src="assets/vendor/venobox/venobox.min.js"></script>
+  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="assets/vendor/counterup/counterup.min.js"></script>
+  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+  <style type="text/css">
+  body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+main { 
+  background-image: url(assets/img/images/headingimage.jpeg); 
+  background-repeat: repeat; 
+  -webkit-background-clip: text; 
+  -webkit-text-fill-color: transparent; 
+  margin-bottom: 100px;
+  font-size: 100px; 
+  text-align: center; 
+  font-weight: bold; 
+  text-transform: uppercase; 
+  font-family: 'Steelfish Rg', 'helvetica neue', 
+               helvetica, arial, sans-serif; 
+  font-weight: 800; 
+  -webkit-font-smoothing: antialiased; 
+        } 
+
+@media screen and (max-width: 837px){
+  main{
+    font-size: 70px;
+     margin-bottom: 70px;
+  }
+}
+
+@media screen and (max-width: 590px){
+  main{
+    font-size: 50px;
+     margin-bottom: 50px;
+
+  }
+}
+@media screen and (max-width: 720px){
+  main{
+    margin-top: 70px;
+  }
+}
+
+@media screen and (max-width: 430px){
+  main{
+    font-size: 30px;
+     margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 350px){
+  #ani{
+    width: 250px;
+    height: 270px;
+  }
+}
+@media screen and (max-width: 400px){
+#company img{
+  height: 100px;
+  width: 100px;
+}
+  
+}
+.aboutdesc{
+  font-size: 23px;
+  word-spacing: 3px;
+}
+@media screen and (max-width: 500px){
+  .aboutdesc{
+    font-size: 20px;
+    word-spacing: 2px;
+  }
+}
+@media screen and (max-width: 340px){
+  .aboutdesc{
+    font-size: 17px;
+    word-spacing: 1px;
+  }
+}
+.connectdesc{
+  font-size: 20px;
+  word-spacing: 3px;
+}
+@media screen and (max-width: 500px){
+  .connectdesc{
+    font-size: 17px;
+    word-spacing: 2px;
+  }
+}
+@media screen and (max-width: 340px){
+  .connectdesc{
+    padding: 10px;
+    padding-left: 15px;
+    font-size: 15px;
+    word-spacing: 1px;
+  }
+}
+
+
+</style>
+</head>
+<body>
+  <style>
+  
+
+.menu-wrap{
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 2;
+
+}
+
+.toggler{
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  width: 60px;
+  height: 60px;
+  z-index: 3;
+  opacity: 0;
+  cursor: pointer;
+
+}
+
+.hamburger{
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  width: 60px;
+  height: 60px;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: darkblue;
+    animation: pulse1 2s linear infinite;
+}
+
+.hamburger>div{
+  position: absolute;
+  width: 60%;
+  height: 3px;
+  border-radius: 1.5px;
+  background-color: #fff;
+  transition: .4s;
+}
+
+.hamburger>div:before{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  border-radius: 1.5px;
+  background-color: #fff;
+  top: -10px;
+  left: 0;
+  transition: .4s;
+}
+
+.hamburger>div:after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  border-radius: 1.5px;
+  background-color: #fff;
+  top: 10px;
+  left: 0;
+  transition: .4s;
+}
+
+.toggler:checked + .hamburger>div{
+  transform: rotate(135deg);
+}
+
+.toggler:checked:hover + .hamburger>div{
+  transform: rotate(225deg);
+}
+
+.toggler:checked + .hamburger>div:before, .toggler:checked + .hamburger>div:after{
+  top: 0;
+  transform: rotate(90deg);
+}
+
+.menu{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  transition: .6s;
+}
+
+.menu > div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-150%) translateX(-50%);
+    width: 1600px;
+    height: 1600px;
+    border-radius: 100%;
+    background-color: darkblue;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: .6s;
+}
+
+.menu > div > div{
+  max-width: 90vw;
+  max-height: 200vh;
+  opacity: 0;
+  transition: .6s;
+  list-style-type: none;
+}
+.menu > div > div > ul {
+  list-style-type: none;
+}
+.menu > div > div > ul > li{
+  list-style-type: none;
+  font-size: 40px;
+}
+
+.menu > div > div > ul > li > a{
+  text-decoration: none;
+  color: #fff;
+  list-style-type: none;
+  font-weight: 550;
+  text-transform: uppercase;
+  margin: .5rem;
+  transition: .3s;
+  font-size: 40px;
+  display: inline-block;
+}
+
+.menu > div > div > ul > li > a:hover{
+  color: blue;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.toggler:checked ~ .menu{
+  visibility: visible;
+}
+
+.toggler:checked ~ .menu > div{
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.toggler:checked ~ .menu > div > div{
+  opacity: 1;
+}
+
+@keyframes pulse{
+  0%{
+    box-shadow: 0 0 0 0 rgba(2, 117, 216, 0.99);
+  }
+  70%{
+    box-shadow: 0 0 0 1rem rgba(2, 117, 216, 0);
+  }
+  100%{
+    box-shadow: 0 0 0 0 rgba(2, 117, 216, 0);
+  }
+}
+@keyframes pulse1{
+  0%{
+    box-shadow: 0 0 0 0 rgba(0,0,139, 0.99);
+  }
+  70%{
+    box-shadow: 0 0 0 1rem rgba(0,0,139, 0);
+  }
+  100%{
+    box-shadow: 0 0 0 0 rgba(0,0,139, 0);
+  }
+}
+.ideaboat{
+  font-size: 50px;
+  margin-left: 0;
+}
+@media screen and (max-width: 500px){
+  .ideaboat{
+    font-size: 30px;
+  }
+  .menu{
+    width: 100%;
+  }
+  ul li {
+    margin-left: -20%;
+  }
+}
+@media screen and (max-width: 1000px){
+ 
+  ul li {
+    margin-left: -20%;
+  }
+}
+
+</style>
+
+
+<div class="menu-wrap">
+    <input type="checkbox" class="toggler">
+    <div class="hamburger">
+      <div></div>
+    </div>
+    <div class="menu text-center w-100">
+      <div>
+  
+          <ul style="list-style: none;font-size: 40px;font-family: 'arial';" class="">
+            <li><a href="index.php" style="font-style: 40px;text-decoration: none;color: #fff;">Home</a></li>
+            <li><a href="services.php" style="font-style: 40px;text-decoration: none;color: #fff;">Services</a></li>
+            <li><a href="blog.php" style="font-style: 40px;text-decoration: none;color: #fff;">Blogs</a></li>
+            <li><a href="about.php" style="font-style: 40px;text-decoration: none;color: #fff;">About Us</a></li>
+            <li><a href="events.php" style="font-style: 40px;text-decoration: none;color: #fff;">Events</a></li>
+            
+          </ul>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+    
+
+
+  <main class=""> About Us </main>
+  <div class="container text-center">
+
+   <!--+========================================  Description   ==========================================--> 
+    <section id="Aboutus" class="">
+      <div class="row text-center">
+        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 text-center mt-3">
+          <img src="assets/img/images/logo.png" height="300px" width="300px" id="ani">
+        </div>
+        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 text-center mt-5">
+          <p class=" px-3 text-dark aboutdesc" style="font-family: 'sans-serif';font-weight: bold;text-align:justify">
+            IdeaBoat is a leading digital marketing agency that focuses on growing your business successfully with online marketing services. Whether you want to increase conversions, traffic to your website, or both, we can help you design an Internet marketing campaign that can help you reach your goals.
+          </p>
+          <p class="h4 text-left mt-4 text-muted px-3"> Want to Connect With us? </p>
+           <p class="h1 text-left px-3"><a href="assets/img/images/IdeaBoat.pdf" download="download" class="btn btn-primary rounded px-3 py-2" > Get Connected </a></p>
+
+        </div>
+      </div>
+    </section>
+
+     <!--+======================================== End  Description   ==========================================--> 
+  
+    
+    <!-- ========================================== Our Team Section ====================================================== -->
+    <section id="team" class="team text-center mt-5">
+     
+
+        <div class="section-title">
+          <h2>Our Team</h2>
+          <p>Get in touch with our team and know how things work from the inside.</p>
+        </div>
+ 
+        <div class="row text-center">
+          <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 text-center" data-aos="fade-up">
+            <div class="member text-center">
+              <div class="pic text-center">
+                <div class="flip-card text-center ">
+                  <div class="flip-card-inner text-center bg-dark">
+                    <div class="flip-card-front text-center">
+                      <img src="assets/img/team/1.png" class="text-center" alt="Avatar" height="300px" width="300px" style="">
+                    </div>
+                    <div class="flip-card-back text-center">
+                      <p class="pl-4 pr-4 py-5  text-left text-light" style="font-size: 13px;">
+
+                      Try to develop an idea towards endless possibilities because one opportunity can make your idea suitable for every possibilities.
+                    </p>
+                    </div>
+                  </div>
+                </div>
+               </div>
+              <div class="member-info text-center" >
+                <h4>Kalash Shah</h4>
+                <div class="social text-center">
+                  <a target="blank" href="mailto:kalashshah82@gmail.com"><i class="icofont-envelope"></i></a>
+                  <a target="blank" href="https://www.facebook.com/kalash.shah.10"><i class="icofont-facebook"></i></a>
+                  <a target="blank" href="https://instagram.com/kalashshah16?igshid=4uhsfau5j82q"><i class="icofont-instagram"></i></a>
+                  <a target="blank" href=""><i class="icofont-linkedin"></i></a>
+                  <a target="blank" href="https://wa.me/+918320209108"><i class="icofont-whatsapp"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 text-center" data-aos="fade-up">
+            <div class="member text-center">
+              <div class="pic text-center">
+                <div class="flip-card text-center">
+                  <div class="flip-card-inner text-center bg-dark">
+                    <div class="flip-card-front text-center">
+                      <img src="assets/img/team/3.png" class="text-center" alt="Avatar" style="width:300px;height:300px;">
+                    </div>
+                    <div class="flip-card-back text-center">
+                    <p class="pl-4 pr-4 py-5  text-left text-light" style="font-size: 13px;">
+                      I've always looked into trying something new. Chasing uncertainty is all together a energetic experience. Get out of your zone and seek discomfort.
+                    </p>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>  
+              <div class="member-info text-center" >
+                <h4>Smit Shah</h4>
+                
+                <div class="social text-center">
+                  <a target="blank" href="mailto:iamsmit05@gmail.com"><i class="icofont-envelope"></i></a>
+                  <a target="blank" href="https://www.facebook.com/IdeaBoat-103159031449758/"><i class="icofont-facebook"></i></a>
+                  <a target="blank" href="https://instagram.com/theideaboat?igshid=1pifg20qoer5n"><i class="icofont-instagram"></i></a>
+                  <a target="blank" href=""><i class="icofont-linkedin"></i></a>
+                  <a target="blank" href="https://wa.me/+919426908849"><i class="icofont-whatsapp"></i></a>
+                 </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 text-center" data-aos="fade-up">
+            <div class="member text-center">
+              <div class="pic text-center">
+                <div class="flip-card text-center">
+                  <div class="flip-card-inner text-center bg-dark">
+                    <div class="flip-card-front text-center">
+                      <img src="assets/img/team/2.png" class="text-center" alt="Avatar" style="width:300px;height:300px;">
+                    </div>
+                    <div class="flip-card-back text-center text-light">
+                     <p class="pl-4 pr-4 py-5  text-left text-light" style="font-size: 13px;"> 
+                      User experience is everything. It always has been, but it’s still undervalued and under-invested in. If you don’t know user-centered design, study it. Hire people who know it. Obsess over it. Live and breathe it. Get your whole company on board
+                    </p>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>  
+              <div class="member-info" >
+                <h4>Manav Jain</h4>
+               
+                <div class="social">
+                  <a target="blank" href="mailto:manavj4254@gmail.com"><i class="icofont-envelope"></i></a>
+                  <a target="blank" href="https://www.facebook.com/jain.manav.1/"><i class="icofont-facebook"></i></a>
+                  <a target="blank" href="https://www.instagram.com/jmanav02/"><i class="icofont-instagram"></i></a>
+                  <a target="blank" href="https://www.linkedin.com/in/manav-jain-290b791ba/"><i class="icofont-linkedin"></i></a>
+                  <a target="blank" href="https://wa.me/+919998626184"><i class="icofont-whatsapp"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ==================================================End Our Team Section ============================================= -->
+
+
+    <style type="text/css">
+    
+      .no-js img.lazyload { display: none;z-index: -9999999; }
+      figure.wp-block-image img.lazyloading { min-width: 150px; }
+              .lazyload, .lazyloading { opacity: 0; }
+        .lazyloaded {
+          opacity: 1;
+
+          transition: opacity 400ms;
+          transition-delay: 0ms;
+        }
+  </style>
+ 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  
+  <section class="elementor-section elementor-top-section elementor-element elementor-element-8accd38 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="8accd38" data-element_type="section" data-settings="{&quot;ekit_has_onepagescroll_dot&quot;:&quot;yes&quot;}">
+<div class="elementor-container elementor-column-gap-default">
+<div class="elementor-row">
+<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-73f4032" data-id="73f4032" data-element_type="column">
+<div class="elementor-column-wrap elementor-element-populated">
+<div class="elementor-widget-wrap">
+<div class="elementor-element elementor-element-9b1734c elementor-widget elementor-widget-spacer" data-id="9b1734c" data-element_type="widget" data-widget_type="spacer.default">
+<div class="elementor-widget-container">
+<div class="elementor-spacer">
+<div class="elementor-spacer-inner"></div>
+</div>
+</div>
+</div>
+<div class="elementor-element elementor-element-39e08f8 elementor-widget elementor-widget-html" data-id="39e08f8" data-element_type="widget" data-widget_type="html.default">
+<div class="elementor-widget-container">
+<style>
+  body{
+    z-index: -999999;
+  }
+      @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+      .icon1 i {
+        font-size: 60px;
+        color: #ff9f43;
+      }
+
+      .icon2 i {
+        font-size: 60px;
+        color: #9141ea;
+      }
+
+      .icon3 i {
+        font-size: 60px;
+        color: #f43783;
+      }
+
+      .icon4 i {
+        font-size: 60px;
+        color: #3ed707;
+      }
+
+      .icon5 i {
+        font-size: 60px;
+        color: #0abde3;
+      }
+
+      .icon6 i {
+        font-size: 60px;
+        color: #ee5253;
+      }
+
+      @keyframes rotation {
+        from {
+          transform: rotate(0deg);
+        }
+
+        to {
+          transform: rotate(360deg);
+        }
+      }
+
+      .circle_container {
+        width: 100%;
+        height: 700px;
+        display: flex;
+        /* flex-direction: column; */
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        margin-top: 30px;
+      }
+
+      .box {
+        width: 400px;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        /* opacity: 0.8; */
+        margin-left: 25vw;
+        margin-top: 5%;
+        /* for demo purpose  */
+      }
+
+      .stack-top {
+        z-index: -999999999;
+        width: 320px;
+        height: 320px;
+        margin-left: 35.5%;
+        margin-top: 14.5%;
+      }
+      @media (min-width: 1440px) {
+        .stack-top {
+          margin-left: 30.5%;
+          margin-top: 8.5%;
+        }
+      }
+      @media (min-width: 1440px) and (max-width: 2024px) {
+        .stack-top {
+          margin-left: 32.5%;
+          margin-top: 10.5%;
+        }
+      }
+      @media (min-width: 1024px) and (max-width: 1264px) {
+        .stack-top {
+          margin-left: 35%;
+          margin-top: 13.5%;
+        }
+      }
+      @media (max-width: 1024px) {
+        .stack-top {
+          width: 300px;
+          height: 300px;
+          margin-left: 41.5%;
+          margin-top: 16.5%;
+        }
+      }
+      @media (max-width: 1024px) {
+        #stack-top {
+          margin-left: 35%;
+          margin-top: 19.5;
+        }
+        .box {
+          margin-left: 30%;
+        }
+      }
+      @media (max-width: 880px) {
+        #stack-top {
+          margin-left: 29%;
+          margin-top: 19.5;
+        }
+        .box {
+          margin-left: 22%;
+        }
+      }
+       @media (max-width: 768px) {
+        #stack-top {
+          margin-left: 30%;
+        }
+        .box {
+          margin-left: 22%;
+          display: none;
+        }
+        #boxElement li {
+          width: 160px !important;
+        }
+      }
+      @media (min-width: 425px) and (max-width: 768px) {
+        .stack-top {
+          margin-left: 47.5%;
+          margin-top: 22.5%;
+        }
+      }
+      @media (min-width: 425px) and (max-width: 516px) {
+        .stack-top {
+          margin-left: 60.5%;
+          margin-top: 25.5%;
+        }
+      }
+      @media (max-width: 425px) {
+        .stack-top {
+          width: 250px;
+          height: 250px;
+          margin-left: 70.5%;
+          margin-top: 39.5%;
+        }
+      }
+      @media (max-width: 320px) {
+        .stack-top {
+          margin-left: 80.5%;
+          margin-top: 46.5%;
+        }
+      }
+      @media (max-width: 668px){
+        .elementor-widget-container{
+          display: none;
+        }
+      }     
+      .stack-top img {
+        /* margin-left: 50px; */
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        animation: rotation 8s infinite linear;
+      }
+
+      .box ul {
+        position: relative;
+        top: 200px;
+        left: 200px;
+        /*for example purposes only*/
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      .box ul li {
+        position: absolute;
+      }
+
+      #boxElement li {
+        display: flex;
+        width: 160px;
+        height: 130px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        background: white;
+        border: 1px solid black;
+        border-radius: 20px;
+        padding: 10px;
+      }
+
+      #boxElement li span {
+        font-weight: 900;
+        font-size: 16px;
+        font-family: 'Lato', sans-serif;
+        text-align: center;
+      }
+    </style>
+<script src="https://kit.fontawesome.com/b3dbf78d7c.js" crossorigin="anonymous"></script>
+<div id="#titlehidden" class="section-title mt-5">
+          <h2>What We Do?</h2>
+          <p>We’ll take your business to the next level by putting you in front of the right audience. </p>
+</div>
+<div class="circle_container">
+<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+<div class="box">
+<ul id="boxElement">
+<li class="icon1">
+<i class="fas fa-paint-brush"></i>
+<span>Professional Logo</span>
+</li>
+<li class="icon2">
+<i class="fas fa-file-image"></i>
+<span>Promotion Posters</span>
+</li>
+<li class="icon3">
+<i class="fas fa-gifts"></i>
+<span>Festival Ads</span>
+</li>
+<li class="icon4">
+<i class="fas fa-bullhorn"></i>
+<span>Social Media Marketing</span>
+</li>
+<li class="icon5">
+<i class="fas fa-video"></i>
+<span>Marketing Videos</span>
+</li>
+<li class="icon6">
+<i class="fab fa-youtube"></i>
+<span>Youtube Ads</span>
+</li>
+</ul>
+</div>
+<div class="box stack-top" id="stack-top">
+<img alt="image" src="assets/img/images/wheel.png" class="lazyload" alt="No iMgae" style="z-index: -9999;"><noscript><img
+         src="1.jpg" alt="No iMgae" style="z-index: -9999"
+        /></noscript>
+</div>
+</div>
+<script>
+      var elements = document.getElementById("boxElement").childNodes;
+      var counter = 9,
+        previous = 9,
+        colorCounter = 4;
+
+      var colors = [
+        " #FF9F43",
+        "#9141EA",
+        "#F43783",
+        "#3ED707",
+        "#0ABDE3",
+        " #EE5253",
+      ];
+      var originalColor = colors[colorCounter];
+      setInterval(function () {
+        elements[previous].childNodes[3].style.color = "black";
+        elements[previous].childNodes[1].style.color = originalColor;
+        originalColor = elements[counter].childNodes[1].style.color;
+        elements[counter].style.background = colors[colorCounter];
+        elements[counter].childNodes[3].style.color = "white";
+        elements[counter].childNodes[1].style.color = "white";
+        elements[previous].style.background = "white";
+        previous = counter;
+        counter += 2;
+        colorCounter++;
+        colorCounter %= 6;
+        if (counter >= elements.length) counter = 1;
+      }, 1325);
+    </script>
+<script>
+      var type = 1, //circle type - 1 whole, 0.5 half, 0.25 quarter
+        radius = "18rem", //distance from center
+        start = -90, //shift start from 0
+        $elements = $(".box>ul>li"),
+        numberOfElements = type === 1 ? $elements.length : $elements.length - 1, //adj for even distro of elements when not full circle
+        slice = (360 * type) / numberOfElements;
+
+      $elements.each(function (i) {
+        var $self = $(this),
+          rotate = slice * i + start,
+          rotateReverse = rotate * -1;
+
+        $self.css({
+          transform:
+            "rotate(" +
+            rotate +
+            "deg) translate(" +
+            radius +
+            ") rotate(" +
+            rotateReverse +
+            "deg)",
+        });
+      });
+    </script> </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+
+<script> !function(e){
+var t={
+}
+;
+function n(i){
+if(t[i])return t[i].exports;
+var r=t[i]={
+i:i,l:!1,exports:{
+}
+}
+;
+return e[i].call(r.exports,r,r.exports,n),r.l=!0,r.exports}
+n.m=e,n.c=t,n.d=function(e,t,i){
+n.o(e,t)||Object.defineProperty(e,t,{
+enumerable:!0,get:i}
+)}
+,n.r=function(e){
+"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{
+value:"Module"}
+),Object.defineProperty(e,"__esModule",{
+value:!0}
+)}
+,n.t=function(e,t){
+if(1&t&&(e=n(e)),8&t)return e;
+if(4&t&&"object"==typeof e&&e&&e.__esModule)return e;
+var i=Object.create(null);
+if(n.r(i),Object.defineProperty(i,"default",{
+enumerable:!0,value:e}
+),2&t&&"string"!=typeof e)for(var r in e)n.d(i,r,function(t){
+return e[t]}
+.bind(null,r));
+return i}
+,n.n=function(e){
+var t=e&&e.__esModule?function(){
+return e.default}
+:function(){
+return e}
+;
+return n.d(t,"a",t),t}
+,n.o=function(e,t){
+return Object.prototype.hasOwnProperty.call(e,t)}
+,n.p="",n(n.s=25)}
+({
+1:function(e,t,n){
+!function(t,n){
+var i=function(e,t,n){
+"use strict";
+var i,r;
+if(function(){
+var t,n={
+lazyClass:"lazyload",loadedClass:"lazyloaded",loadingClass:"lazyloading",preloadClass:"lazypreload",errorClass:"lazyerror",autosizesClass:"lazyautosizes",srcAttr:"data-src",srcsetAttr:"data-srcset",sizesAttr:"data-sizes",minSize:40,customMedia:{
+}
+,init:!0,expFactor:1.5,hFac:.8,loadMode:2,loadHidden:!0,ricTimeout:0,throttleDelay:125}
+;
+for(t in r=e.lazySizesConfig||e.lazysizesConfig||{
+}
+,n)t in r||(r[t]=n[t])}
+(),!t||!t.getElementsByClassName)return{
+init:function(){
+}
+,cfg:r,noSupport:!0}
+;
+var a=t.documentElement,o=e.HTMLPictureElement,s=e.addEventListener.bind(e),l=e.setTimeout,u=e.requestAnimationFrame||l,c=e.requestIdleCallback,d=/^picture$/i,f=["load","error","lazyincluded","_lazyloaded"],y={
+}
+,g=Array.prototype.forEach,v=function(e,t){
+return y[t]||(y[t]=new RegExp("(\\s|^)"+t+"(\\s|$)")),y[t].test(e.getAttribute("class")||"")&&y[t]}
+,m=function(e,t){
+v(e,t)||e.setAttribute("class",(e.getAttribute("class")||"").trim()+" "+t)}
+,p=function(e,t){
+var n;
+(n=v(e,t))&&e.setAttribute("class",(e.getAttribute("class")||"").replace(n," "))}
+,h=function(e,t,n){
+var i=n?"addEventListener":"removeEventListener";
+n&&h(e,t),f.forEach((function(n){
+e[i](n,t)}
+))}
+,z=function(e,n,r,a,o){
+var s=t.createEvent("Event");
+return r||(r={
+}
+),r.instance=i,s.initEvent(n,!a,!o),s.detail=r,e.dispatchEvent(s),s}
+,b=function(t,n){
+var i;
+!o&&(i=e.picturefill||r.pf)?(n&&n.src&&!t.getAttribute("srcset")&&t.setAttribute("srcset",n.src),i({
+reevaluate:!0,elements:[t]}
+)):n&&n.src&&(t.src=n.src)}
+,A=function(e,t){
+return(getComputedStyle(e,null)||{
+}
+)[t]}
+,C=function(e,t,n){
+for(n=n||e.offsetWidth;
+n<r.minSize&&t&&!e._lazysizesWidth;
+)n=t.offsetWidth,t=t.parentNode;
+return n}
+,E=(ye=[],ge=[],ve=ye,me=function(){
+var e=ve;
+for(ve=ye.length?ge:ye,de=!0,fe=!1;
+e.length;
+)e.shift()();
+de=!1}
+,pe=function(e,n){
+de&&!n?e.apply(this,arguments):(ve.push(e),fe||(fe=!0,(t.hidden?l:u)(me)))}
+,pe._lsFlush=me,pe),_=function(e,t){
+return t?function(){
+E(e)}
+:function(){
+var t=this,n=arguments;
+E((function(){
+e.apply(t,n)}
+))}
+}
+,M=function(e){
+var t,i,r=function(){
+t=null,e()}
+,a=function(){
+var e=n.now()-i;
+e<99?l(a,99-e):(c||r)(r)}
+;
+return function(){
+i=n.now(),t||(t=l(a,99))}
+}
+,w=(U=/^img$/i,G=/^iframe$/i,J="onscroll"in e&&!/(gle|ing)bot/.test(navigator.userAgent),K=0,Q=0,V=-1,X=function(e){
+Q--,(!e||Q<0||!e.target)&&(Q=0)}
+,Y=function(e){
+return null==I&&(I="hidden"==A(t.body,"visibility")),I||!("hidden"==A(e.parentNode,"visibility")&&"hidden"==A(e,"visibility"))}
+,Z=function(e,n){
+var i,r=e,o=Y(e);
+for(k-=n,q+=n,H-=n,$+=n;
+o&&(r=r.offsetParent)&&r!=t.body&&r!=a;
+)(o=(A(r,"opacity")||1)>0)&&"visible"!=A(r,"overflow")&&(i=r.getBoundingClientRect(),o=$>i.left&&H<i.right&&q>i.top-1&&k<i.bottom+1);
+return o}
+,ee=function(){
+var e,n,o,s,l,u,c,d,f,y,g,v,m=i.elements;
+if((F=r.loadMode)&&Q<8&&(e=m.length)){
+for(n=0,V++;
+n<e;
+n++)if(m[n]&&!m[n]._lazyRace)if(!J||i.prematureUnveil&&i.prematureUnveil(m[n]))se(m[n]);
+else if((d=m[n].getAttribute("data-expand"))&&(u=1*d)||(u=K),y||(y=!r.expand||r.expand<1?a.clientHeight>500&&a.clientWidth>500?500:370:r.expand,i._defEx=y,g=y*r.expFactor,v=r.hFac,I=null,K<g&&Q<1&&V>2&&F>2&&!t.hidden?(K=g,V=0):K=F>1&&V>1&&Q<6?y:0),f!==u&&(j=innerWidth+u*v,D=innerHeight+u,c=-1*u,f=u),o=m[n].getBoundingClientRect(),(q=o.bottom)>=c&&(k=o.top)<=D&&($=o.right)>=c*v&&(H=o.left)<=j&&(q||$||H||k)&&(r.loadHidden||Y(m[n]))&&(P&&Q<3&&!d&&(F<3||V<4)||Z(m[n],u))){
+if(se(m[n]),l=!0,Q>9)break}
+else!l&&P&&!s&&Q<4&&V<4&&F>2&&(W[0]||r.preloadAfterLoad)&&(W[0]||!d&&(q||$||H||k||"auto"!=m[n].getAttribute(r.sizesAttr)))&&(s=W[0]||m[n]);
+s&&!l&&se(s)}
+}
+,te=function(e){
+var t,i=0,a=r.throttleDelay,o=r.ricTimeout,s=function(){
+t=!1,i=n.now(),e()}
+,u=c&&o>49?function(){
+c(s,{
+timeout:o}
+),o!==r.ricTimeout&&(o=r.ricTimeout)}
+:_((function(){
+l(s)}
+),!0);
+return function(e){
+var r;
+(e=!0===e)&&(o=33),t||(t=!0,(r=a-(n.now()-i))<0&&(r=0),e||r<9?u():l(u,r))}
+}
+(ee),ne=function(e){
+var t=e.target;
+t._lazyCache?delete t._lazyCache:(X(e),m(t,r.loadedClass),p(t,r.loadingClass),h(t,re),z(t,"lazyloaded"))}
+,ie=_(ne),re=function(e){
+ie({
+target:e.target}
+)}
+,ae=function(e){
+var t,n=e.getAttribute(r.srcsetAttr);
+(t=r.customMedia[e.getAttribute("data-media")||e.getAttribute("media")])&&e.setAttribute("media",t),n&&e.setAttribute("srcset",n)}
+,oe=_((function(e,t,n,i,a){
+var o,s,u,c,f,y;
+(f=z(e,"lazybeforeunveil",t)).defaultPrevented||(i&&(n?m(e,r.autosizesClass):e.setAttribute("sizes",i)),s=e.getAttribute(r.srcsetAttr),o=e.getAttribute(r.srcAttr),a&&(c=(u=e.parentNode)&&d.test(u.nodeName||"")),y=t.firesLoad||"src"in e&&(s||o||c),f={
+target:e}
+,m(e,r.loadingClass),y&&(clearTimeout(B),B=l(X,2500),h(e,re,!0)),c&&g.call(u.getElementsByTagName("source"),ae),s?e.setAttribute("srcset",s):o&&!c&&(G.test(e.nodeName)?function(e,t){
+try{
+e.contentWindow.location.replace(t)}
+catch(n){
+e.src=t}
+}
+(e,o):e.src=o),a&&(s||c)&&b(e,{
+src:o}
+)),e._lazyRace&&delete e._lazyRace,p(e,r.lazyClass),E((function(){
+var t=e.complete&&e.naturalWidth>1;
+y&&!t||(t&&m(e,"ls-is-cached"),ne(f),e._lazyCache=!0,l((function(){
+"_lazyCache"in e&&delete e._lazyCache}
+),9)),"lazy"==e.loading&&Q--}
+),!0)}
+)),se=function(e){
+if(!e._lazyRace){
+var t,n=U.test(e.nodeName),i=n&&(e.getAttribute(r.sizesAttr)||e.getAttribute("sizes")),a="auto"==i;
+(!a&&P||!n||!e.getAttribute("src")&&!e.srcset||e.complete||v(e,r.errorClass)||!v(e,r.lazyClass))&&(t=z(e,"lazyunveilread").detail,a&&x.updateElem(e,!0,e.offsetWidth),e._lazyRace=!0,Q++,oe(e,t,a,i,n))}
+}
+,le=M((function(){
+r.loadMode=3,te()}
+)),ue=function(){
+3==r.loadMode&&(r.loadMode=2),le()}
+,ce=function(){
+P||(n.now()-R<999?l(ce,999):(P=!0,r.loadMode=3,te(),s("scroll",ue,!0)))}
+,{
+_:function(){
+R=n.now(),i.elements=t.getElementsByClassName(r.lazyClass),W=t.getElementsByClassName(r.lazyClass+" "+r.preloadClass),s("scroll",te,!0),s("resize",te,!0),s("pageshow",(function(e){
+if(e.persisted){
+var n=t.querySelectorAll("."+r.loadingClass);
+n.length&&n.forEach&&u((function(){
+n.forEach((function(e){
+e.complete&&se(e)}
+))}
+))}
+}
+)),e.MutationObserver?new MutationObserver(te).observe(a,{
+childList:!0,subtree:!0,attributes:!0}
+):(a.addEventListener("DOMNodeInserted",te,!0),a.addEventListener("DOMAttrModified",te,!0),setInterval(te,999)),s("hashchange",te,!0),["focus","mouseover","click","load","transitionend","animationend"].forEach((function(e){
+t.addEventListener(e,te,!0)}
+)),/d$|^c/.test(t.readyState)?ce():(s("load",ce),t.addEventListener("DOMContentLoaded",te),l(ce,2e4)),i.elements.length?(ee(),E._lsFlush()):te()}
+,checkElems:te,unveil:se,_aLSL:ue}
+),x=(L=_((function(e,t,n,i){
+var r,a,o;
+if(e._lazysizesWidth=i,i+="px",e.setAttribute("sizes",i),d.test(t.nodeName||""))for(a=0,o=(r=t.getElementsByTagName("source")).length;
+a<o;
+a++)r[a].setAttribute("sizes",i);
+n.detail.dataAttr||b(e,n.detail)}
+)),O=function(e,t,n){
+var i,r=e.parentNode;
+r&&(n=C(e,r,n),(i=z(e,"lazybeforesizes",{
+width:n,dataAttr:!!t}
+)).defaultPrevented||(n=i.detail.width)&&n!==e._lazysizesWidth&&L(e,r,i,n))}
+,T=M((function(){
+var e,t=S.length;
+if(t)for(e=0;
+e<t;
+e++)O(S[e])}
+)),{
+_:function(){
+S=t.getElementsByClassName(r.autosizesClass),s("resize",T)}
+,checkElems:T,updateElem:O}
+),N=function(){
+!N.i&&t.getElementsByClassName&&(N.i=!0,x._(),w._())}
+;
+var S,L,O,T;
+var W,P,B,F,R,j,D,k,H,$,q,I,U,G,J,K,Q,V,X,Y,Z,ee,te,ne,ie,re,ae,oe,se,le,ue,ce;
+var de,fe,ye,ge,ve,me,pe;
+return l((function(){
+r.init&&N()}
+)),i={
+cfg:r,autoSizer:x,loader:w,init:N,uP:b,aC:m,rC:p,hC:v,fire:z,gW:C,rAF:E}
+}
+(t,t.document,Date);
+t.lazySizes=i,e.exports&&(e.exports=i)}
+("undefined"!=typeof window?window:{
+}
+)}
+,25:function(e,t,n){
+"use strict";
+n.r(t);
+var i=n(1);
+n.n(i).a.init()}
+}
+);
+ 
+</script>
+
+
+
+
+     <!--+========================================  Comapny logos   ==========================================--> 
+  
+    <!--section id="company">
+      <div class="row text-center mb-5">
+       <div class="section-title col-12 text-center">
+          <h2>Companies with Us</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem.</p>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6" data-aos="fade-up" data-aos-dealy="100">
+          <img src="assets/img/images/1.png" height="150px" width="150px">
+          <p class="text-center text-info mt-2"> Stero </p>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6" data-aos="fade-up" data-aos-dealy="100">
+          <img src="assets/img/images/2.png" height="150px" width="150px">
+          <p class="text-center text-info mt-2"> Stero </p>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6" data-aos="fade-up" data-aos-dealy="100">
+          <img src="assets/img/images/3.png" height="150px" width="150px">
+          <p class="text-center text-info mt-2"> Stero </p>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6" data-aos="fade-up" data-aos-dealy="100">
+          <img src="assets/img/images/4.png" height="150px" width="150px">
+          <p class="text-center text-info mt-2"> Stero </p>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6" data-aos="fade-up" data-aos-dealy="100">
+          <img src="assets/img/images/1.png" height="150px" width="150px">
+          <p class="text-center text-info mt-2"> Stero </p>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6" data-aos="fade-up" data-aos-dealy="100">
+          <img src="assets/img/images/2.png" height="150px" width="150px">
+          <p class="text-center text-info mt-2"> Stero </p>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6" data-aos="fade-up" data-aos-dealy="100">
+          <img src="assets/img/images/3.png" height="150px" width="150px">
+          <p class="text-center text-info mt-2"> Stero </p>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6" data-aos="fade-up" data-aos-dealy="100">
+          <img src="assets/img/images/4.png" height="150px" width="150px">
+          <p class="text-center text-info mt-2"> Stero </p>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6" data-aos="fade-up" data-aos-dealy="100">
+          <img src="assets/img/images/1.png" height="150px" width="150px">
+          <p class="text-center text-info mt-2"> Stero </p>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6" data-aos="fade-up" data-aos-dealy="100">
+          <img src="assets/img/images/2.png" height="150px" width="150px">
+          <p class="text-center text-info mt-2"> Stero </p>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6" data-aos="fade-up" data-aos-dealy="100">
+          <img src="assets/img/images/3.png" height="150px" width="150px">
+          <p class="text-center text-info mt-2"> Stero </p>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6" data-aos="fade-up" data-aos-dealy="100">
+          <img src="assets/img/images/4.png" height="150px" width="150px">
+          <p class="text-center text-info mt-2"> Stero </p>
+        </div>
+
+     
+
+    </section> -->
+ <!--+========================================  End Company Logos   ==========================================--> 
+
+
+  <!--+========================================  Connect with us   ==========================================--> 
+  <section id="Connect" class="container">
+  <div class="section-title" data-aos="fade-up" data-aos-dealy="100">
+    <h4>Connect With Us</h4>
+    
+  </div>
+<p class="mt-5 text-muted connectdesc" data-aos="fade-up" data-aos-delay="100" style="text-align:justify">We love working with new clients, and have the ambition to take any business to the next level with our extensive experience. Whether your company is small or large, and no matter the industry, we'd love to hear from you and get to work.</p>
+<!-- <p class="h4 text-center mt-5 mb-3 text-success" data-aos="fade-up" data-aos-dealy="100">Click Below to download our Digital Card And Connect With Us</p>
+  <p class="h1 text-center" data-aos="fade-up" data-aos-dealy="100"><a href="assets/img/images/IdeaBoat.pdf" download="download" id="btn" class="btn btn-secondary rounded px-3 py-2" > Download </a></p> -->
+
+  <style type="text/css">
+    .servicesBoxes{
+      display:flex;
+      align-items:center;
+      justify-content:space-evenly;
+      flex-wrap:wrap;
+      flex-direction: row;
+      height:100%;
+      width:100%;
+      justify-content:space-evenly;
+      -webkit-transform:perspective(900px);
+      -webkit-transform-style:preserve-3d;
+    }
+    .servicesBoxes>div h3
+    {
+      font-size:25px;
+      font-family:abel,sans-serif;
+      color:#fff;
+      text-shadow:0 0 2px #fff;
+      transform:translatey(10px);
+    }
+    .servicesBoxes>div p{
+      font-size:17px;
+      font-family:abel,sans-serif;
+      color:#fff;
+      text-align:center;
+      width:220px;
+      transform:translatex(12px);
+    }
+    .card1{
+      text-align:center;
+      width:250px;
+      height:350px;
+      border-radius:20px;
+      background:linear-gradient(rgb(219,50,54),rgb(194,19,22))
+      ;transition:.6s;
+      transform:rotateX(75deg) translateY(-200px) translateZ(-100px);
+    }
+    .card1:hover{
+      transform:rotateX(0deg);
+      transform:rotateZ(0deg);
+      transition:.6s;
+      box-shadow:0 0 20px rgba(0,0,0,.3);
+    }
+    .card1 img{
+      transform:translateY(15px);
+      width:200px;
+      height:150px;
+    }
+    .card2{
+      text-align:center;
+      width:250px;
+      height:350px;
+      border-radius:20px;
+      background:linear-gradient(rgb(72,133,237),rgb(29,92,201));
+      animation:animate 1s linear infinite;
+      transition:.6s;
+      transform:rotatex(75deg) translatey(-200px) translatez(-100px);
+    }
+    .card2:hover{
+      transform:rotatex(0deg);
+      transition:.6s;
+      box-shadow:0 0 20px rgba(0,0,0,.3);
+    }
+    .card2 img{
+      transform:translateY(15px);
+      width:180px;
+      height:150px;
+    }
+    .card3{
+      text-align:center;
+      width:250px;
+      height:350px;
+      border-radius:20px;
+      background:linear-gradient(rgb(72,133,237),rgb(29,92,201));
+      transition:.6s;
+      transform:rotatex(75deg) translatey(-200px) translatez(-100px);
+    }
+    .card3:hover{
+      transform:rotatex(0deg);
+      transition:.6s;
+      box-shadow:0 0 20px rgba(0,0,0,.3);
+    }
+    .card3 img{
+      transform:translateY(15px);
+      width:200px;
+      height:120px;
+    }
+    @media(max-width:768px){
+      .card1,.card2,.card3{
+        margin-top:3%;
+        transform:rotatex(0deg);
+        transform:rotatez(0deg);
+        transition:.6s;
+        box-shadow:0 0 20px rgba(0,0,0,.3);
+      }
+    }
+    
+
+
+
+
+  </style>
+   
+     <div class="servicesBoxes">
+      <div class="card1">
+       
+        <h3 class="mb-4 mt-5">Our Digital Card</h3>
+        <p class="mt-5">Get connected with us through our digital card and contact us in the easiest way. Download our digital card now.</p>
+        <a href="assets/img/images/IdeaBoat.pdf" download="download" class="btn btn-dark rounded px-3 py-2"> Download </a>
+      </div>
+     
+      <div class="card3 bg-primary">
+      
+        <h3 class="mb-4 mt-5">Newsletters</h3>
+        <p class="mt-5"> Suscribe our newsletters and stay tuned with regular updates through email. Subscribe now with your email. </p>
+        <a href="#newsletter" class="btn btn-dark rounded px-3 py-2"> Subscribe </a>
+      </div>
+    </div>
+  </div>
+  </div>
+
+</section>
+
+  
+   <!--+========================================  End Connect With Us   ==========================================--> 
+  
+
+  </div>
+
+  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+ <style id='preloader-plus-inline-css'>
+.preloader-plus {
+background-color: #ff9f43;
+ }
+body.complete > *:not(.preloader-plus),.preloader-plus {
+transition-duration: 1000ms,1000ms,0s;
+ }
+.preloader-plus * {
+color: #ffffff;
+ }
+.preloader-plus.complete {
+opacity: 0;
+ transform:  scale(1);
+ transition-delay: 0s,0s,1000ms;
+ }
+}
+.preloader-plus .prog-bar {
+height: 10px;
+ background-color: #ff9f43;
+ }
+.preloader-plus .prog-bar-bg {
+height: 10px;
+ background-color: #ffffff;
+ }
+.preloader-plus .prog-bar-wrapper {
+middle: 0;
+ padding-middle: 15%;
+ width: 300px;
+ }
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+#scrollPath {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 10px;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+#progressbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 10px;
+  border-radius: 10px;
+  height: 100%;
+  background: linear-gradient(to top, #008aff, #00ffe7);
+  animation: animate 5s linear infinite;
+}
+
+@keyframes animate {
+
+  0%,
+  100% {
+    filter: hue-rotate(0deg);
+  }
+
+  50% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+#progressbar:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, #008aff, #00ffe7);
+  filter: blur(1px);
+  border-radius: 10px;
+}
+
+#progressbar:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, #008aff, #00ffe7);
+  /*filter: blur(30px);*/
+  border-radius: 10px;
+}
+
+
+</style>
+
+<div id="progressbar"></div>
+<div id="scrollPath"></div>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="text/javascript">
+    let progress = document.getElementById('progressbar');
+    let totalHeight = document.body.scrollHeight - window.innerHeight;
+    window.onscroll = function () {
+      let progressHeigth = (window.pageYOffset / totalHeight) * 100;
+      progress.style.height = progressHeigth + "%";
+    }
+  </script>
+  <div class="prog-bar-wrapper middle">
+<div class="prog-bar-bg"></div>
+<div class="prog-bar"></div>
+</div>
+
+ <style type="text/css">
+  #footerset{
+    margin: 0%;
+  }
+  @media screen and  (max-width: 768px){
+    #footerset{
+      margin-left: 15%;
+    }
+  }
+  
+  @media screen and (max-width: 992px){
+    #footerset{
+      margin-left: 0%;
+    }
+  }
+</style>
+
+<footer id="footer" class="mt-5" style="color: white;background-color: black;">
+    <div class="footer-top" style="color: white;background-color: black;">
+      <div class="container" style="color: white;background-color: black;">
+        <div class="row">
+
+          <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 footer-info">
+            <h3>IdeaBoat</h3>
+            <p>
+              12, Rajulpark Soc,Opp AMTS Depo,<br>
+              Sabarmati,Ahmedabad<br><br>
+              <strong>Phone:</strong> +91 83202 09108<br>
+              <strong>Email:</strong> theideaboat0508@gmail.com<br>
+            </p>
+            <div class="social-links mt-3">
+              <a target="blank" href="https://www.facebook.com/IdeaBoat-103159031449758/" class="facebook"><i class="bx bxl-facebook"></i></a>
+              <a target="blank" href="https://instagram.com/theideaboat?igshid=1pifg20qoer5n" class="instagram"><i class="bx bxl-instagram"></i></a>
+              <a target="blank" href="assets/img/images/IdeaBoat.pdf" class="mail" download="download"><i class="bx bx-id-card"></i></a>
+            </div>
+          </div>
+
+          <div class="col-xl-2 col-lg-2 col-md-6 col-sm-12 footer-links" style="">
+            <h4>Useful Links</h4>
+            <ul>
+              <li id="footerset"><i class="bx bx-chevron-right"></i> <a href="index.php">Home</a></li>
+              <li id="footerset"><i class="bx bx-chevron-right"></i> <a href="about.php">About us</a></li>
+              <li id="footerset"><i class="bx bx-chevron-right"></i> <a href="services.php">Services</a></li>
+              <li id="footerset"><i class="bx bx-chevron-right"></i> <a href="events.php">Events</a></li>
+              <li id="footerset"><i class="bx bx-chevron-right"></i> <a href="blog.php">Blog</a></li>
+            </ul>
+          </div>
+
+          <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 footer-links" style="" >
+            <h4>Our Services</h4>
+            <ul>
+              <li id="footerset"><i class="bx bx-chevron-right"></i> <a href="services.php#webdevelopment">Web Design</a></li>
+              <li id="footerset"><i class="bx bx-chevron-right"></i> <a href="services.php#webdevelopment">Web Development</a></li>
+              <li id="footerset"><i class="bx bx-chevron-right"></i> <a href="services.php#graphicdesigning">Product Management</a></li>
+              <li id="footerset"><i class="bx bx-chevron-right"></i> <a href="services.php#graphicdesigning">Digital Card</a></li>
+              <li id="footerset"><i class="bx bx-chevron-right"></i> <a href="services.php#graphicdesigning">Product Catalogue</a></li>
+              <li id="footerset"><i class="bx bx-chevron-right"></i> <a href="services.php#graphicdesigning">Graphic Design</a></li>
+              <li id="footerset"><i class="bx bx-chevron-right"></i> <a href="services.php#graphicdesigning">App Development</a></li>
+              <li id="footerset"><i class="bx bx-chevron-right"></i> <a href="services.php#digitalmarketing">Social Media Marketing</a></li>
+            </ul>
+          </div>
+
+          <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 footer-newsletter" id="newsletter">
+            <h4>Our Newsletter</h4>
+            <p>Subscribe to our newsletter and stay tuned </p>
+            <form action="" method="POST">
+              <input type="email" name="email"><input type="submit" value="Subscribe" name="newsletter">
+            </form>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span style="color: skyblue;font-weight: 500 ">IdeaBoat</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+      
+        Designed by <a href="#">IdeaBoat</a>
+         
+      </div>
+    </div>
+  </footer>
+
+
+
+ 
+</body>
+</html>

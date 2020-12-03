@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Blog</title>
+	 <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i,900" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Amita' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Beth Ellen' rel='stylesheet'>
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+
+   <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/jquery-sticky/jquery.sticky.js"></script>
+  <script src="assets/vendor/venobox/venobox.min.js"></script>
+  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="assets/vendor/counterup/counterup.min.js"></script>
+  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+	<style type="text/css">
+		body{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			scroll-behavior: smooth;
+			overflow-x: hidden;
+		}
+		
+main { 
+  background-image: url(assets/img/images/headingimage.jpeg); 
+  background-repeat: repeat; 
+  -webkit-background-clip: text; 
+  -webkit-text-fill-color: transparent; 
+  margin-bottom: 100px;
+  font-size: 100px; 
+  text-align: center; 
+  font-weight: bold; 
+  text-transform: uppercase; 
+  font-family: 'Steelfish Rg', 'helvetica neue', 
+               helvetica, arial, sans-serif; 
+  font-weight: 800; 
+  -webkit-font-smoothing: antialiased; 
+} 
+
+@media screen and (max-width: 837px){
+  main{
+    font-size: 70px;
+     margin-bottom: 70px;
+  }
+}
+
+@media screen and (max-width: 590px){
+  main{
+    font-size: 50px;
+     margin-bottom: 50px;
+
+  }
+}
+@media screen and (max-width: 720px){
+  main{
+    margin-top: 70px;
+  }
+}
+
+@media screen and (max-width: 430px){
+  main{
+    font-size: 30px;
+     margin-bottom: 30px;
+  }
+}
+
+.blog-title{
+	height: 500px;
+	width: auto;
+	font-family: cursive;
+}
+
+.blog-heading{
+	height: 400px;
+	width: 600px;
+	text-align: left;
+	clip-path: polygon(44% 0, 100% 0, 100% 35%, 100% 77%, 100% 100%, 43% 100%, 27% 81%, 27% 24%);
+}
+.blog-display{
+	font-size: 22px;
+	
+	top: 50%;
+	transform: translate(40%,40%);
+}
+@media screen and (max-width: 576px){
+	.blog-heading{
+		display: none;
+	}
+}
+
+
+/* ====================================================================================*/
+.tab {
+  overflow: hidden;
+  
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: white;
+  float: none;
+ 
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+/*@media screen and (max-width: 762px){
+	.tab a{
+		float: left;
+		width: 33%;
+	}
+}*/
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: blue;
+  color: white;
+  font-weight: bold;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: blue;
+  color: white;
+  font-weight: bold;
+}
+
+/* Style the tab content */
+.tabcontent {
+  
+  padding: 6px 12px;
+  
+}
+#ani{
+	display: none;
+}
+#imgshort{
+	transform: translate(65%,15%);
+}
+.heading-text{
+	font-size: 25px;
+	transform: translate(-43%,-40%);
+	font-style: 'arial';
+}
+@media screen and (max-width: 1000px){
+	#imgshort{
+	transform: translate(65%,25%);
+	height: 250px;
+	width: 250px;
+}
+}
+@media screen and (max-width: 992px){
+	#imgshort{
+	transform: translate(50%,25%);
+	height: 250px;
+	width: 250px;
+}
+.heading-text{
+	font-size: 17px;
+}
+}
+
+@media screen and (max-width: 769px){
+	.blog-heading{
+	transform: translate(70%,5%);
+	height: 250px;
+	width: 200px;
+	display: none;
+}
+#ani{
+	display: block;
+}
+.blog-display{
+	width: 100vw;
+	margin-bottom: 20px;
+}
+.heading-text{
+	transform: translate(-43%,-55%);
+
+}
+}
+
+ @media screen and (max-width: 350px){
+  #ani{
+    width: 250px;
+    height: 170px;
+  }
+}
+@media screen and (max-width: 475px){
+ .heading-text{
+	transform: translate(-43%,-55%);
+	font-size: 15px;
+
+}
+}
+@media screen and (max-width: 400px){
+ .heading-text{
+	transform: translate(-43%,-55%);
+	font-size: 13px;
+
+}
+}
+/* ================================================================================================*/
+
+	</style>
+</head>
+<body>
+	 <style>
+  
+
+.menu-wrap{
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 2;
+
+}
+
+.toggler{
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  width: 60px;
+  height: 60px;
+  z-index: 3;
+  opacity: 0;
+  cursor: pointer;
+
+}
+
+.hamburger{
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  width: 60px;
+  height: 60px;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: darkblue;
+    animation: pulse1 2s linear infinite;
+}
+
+.hamburger>div{
+  position: absolute;
+  width: 60%;
+  height: 3px;
+  border-radius: 1.5px;
+  background-color: #fff;
+  transition: .4s;
+}
+
+.hamburger>div:before{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  border-radius: 1.5px;
+  background-color: #fff;
+  top: -10px;
+  left: 0;
+  transition: .4s;
+}
+
+.hamburger>div:after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  border-radius: 1.5px;
+  background-color: #fff;
+  top: 10px;
+  left: 0;
+  transition: .4s;
+}
+
+.toggler:checked + .hamburger>div{
+  transform: rotate(135deg);
+}
+
+.toggler:checked:hover + .hamburger>div{
+  transform: rotate(225deg);
+}
+
+.toggler:checked + .hamburger>div:before, .toggler:checked + .hamburger>div:after{
+  top: 0;
+  transform: rotate(90deg);
+}
+
+.menu{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  transition: .6s;
+}
+
+.menu > div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-150%) translateX(-50%);
+    width: 1600px;
+    height: 1600px;
+    border-radius: 100%;
+    background-color: darkblue;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: .6s;
+}
+
+.menu > div > div{
+  max-width: 90vw;
+  max-height: 200vh;
+  opacity: 0;
+  transition: .6s;
+  list-style-type: none;
+}
+.menu > div > div > ul {
+  list-style-type: none;
+}
+.menu > div > div > ul > li{
+  list-style-type: none;
+  font-size: 40px;
+}
+
+.menu > div > div > ul > li > a{
+  text-decoration: none;
+  color: #fff;
+  list-style-type: none;
+  font-weight: 550;
+  text-transform: uppercase;
+  margin: .5rem;
+  transition: .3s;
+  font-size: 40px;
+  display: inline-block;
+}
+
+.menu > div > div > ul > li > a:hover{
+  color: blue;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.toggler:checked ~ .menu{
+  visibility: visible;
+}
+
+.toggler:checked ~ .menu > div{
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.toggler:checked ~ .menu > div > div{
+  opacity: 1;
+}
+
+@keyframes pulse{
+  0%{
+    box-shadow: 0 0 0 0 rgba(2, 117, 216, 0.99);
+  }
+  70%{
+    box-shadow: 0 0 0 1rem rgba(2, 117, 216, 0);
+  }
+  100%{
+    box-shadow: 0 0 0 0 rgba(2, 117, 216, 0);
+  }
+}
+@keyframes pulse1{
+  0%{
+    box-shadow: 0 0 0 0 rgba(0,0,139, 0.99);
+  }
+  70%{
+    box-shadow: 0 0 0 1rem rgba(0,0,139, 0);
+  }
+  100%{
+    box-shadow: 0 0 0 0 rgba(0,0,139, 0);
+  }
+}
+.ideaboat{
+  font-size: 50px;
+  margin-left: 0;
+}
+@media screen and (max-width: 500px){
+  .ideaboat{
+    font-size: 30px;
+  }
+  .menu{
+    width: 100%;
+  }
+  ul li {
+    margin-left: -20%;
+  }
+}
+@media screen and (max-width: 1000px){
+ 
+  ul li {
+    margin-left: -20%;
+  }
+}
+
+</style>
+
+
+<div class="menu-wrap">
+    <input type="checkbox" class="toggler">
+    <div class="hamburger">
+      <div></div>
+    </div>
+    <div class="menu text-center w-100">
+      <div>
+  
+          <ul style="list-style: none;font-size: 40px;font-family: 'arial';" class="">
+            <li><a href="index.php" style="font-style: 40px;text-decoration: none;color: #fff;">Home</a></li>
+            <li><a href="services.php" style="font-style: 40px;text-decoration: none;color: #fff;">Services</a></li>
+            <li><a href="blog.php" style="font-style: 40px;text-decoration: none;color: #fff;">Blogs</a></li>
+            <li><a href="about.php" style="font-style: 40px;text-decoration: none;color: #fff;">About Us</a></li>
+            <li><a href="events.php" style="font-style: 40px;text-decoration: none;color: #fff;">Events</a></li>
+            
+          </ul>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+    
+
+		
+		<main class=""> Blogs </main>
+
+		<div class="container mb-5 mt-5 text-center" style="overflow-x: hidden;">
+			<!-- =========================================Blog heading =====================================----->
+			<div class="blog-title w-100 pb-5 mt-5" style="background-color: #0080FE">
+
+				<div class="row text-center">
+					<div class="blog-display col-xl-6 col-lg-6 col-md-5 col-sm-12 text-center" >
+						<img src="https://video-public.canva.com/VADn8Z4kM5k/videos/f094fc0eb8.gif" height="200px" width="300px" style="transform: translate(-43%,-43%);" id="ani">
+						<p class="text-light mt-5 px-5 heading-text" style="font-family: 'sans-serif';text-align:justify">An ocean full of content and knowledge filled in just for you! IdeaBoat brings you to the latest updates in digital marketing and keeps you updated. Do check out our blogs to gain information about different aspects of digital marketing.</p>
+					</div>
+					<div class="blog-heading bg-light col-xl-6 col-lg-6 col-md-7 col-sm-0 text-left mt-5" style="overflow-x: hidden;">
+						<img src="https://video-public.canva.com/VADn8Z4kM5k/videos/f094fc0eb8.gif" height="300px" width="300px" style="" id="imgshort">
+						
+					</div>
+				</div>
+
+
+			</div>
+
+			<!-- ========================================= ENd Blog Heading ============================== --->
+
+
+			<!--      ====================================   Blog Content   ======================================-->
+
+				<div class="row mt-5 text-center">
+
+					<div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 text-center bg-light mt-5">
+						<div class="tab my-5">
+  							<!-- <button class="text-center w-100 bg-light tablinks" onclick="openCity(event, 'Blog1')" style="border: none;border-bottom: 0.5px solid rgba(0,0,0,0.2)">Blog1</button>
+  							<button class="text-center w-100 bg-light tablinks" onclick="openCity(event, 'Blog2')" style="border: none;border-bottom: 0.5px solid rgba(0,0,0,0.2)">Blog2</button>
+ 						 	<button class="text-center w-100 bg-light tablinks" onclick="openCity(event, 'Blog3')" style="border: none;">Blog3</button> -->
+ 						 	<a href="#Blog1" class="text-center" style="text-decoration: none;"><button class="text-center w-100  tablinks" style="border: none;border-bottom: 0.5px solid rgba(0,0,0,0.2);font-size: 15px;">7 Secrets of Entrepreneur Mindset</button></a>
+  							
+						</div>
+
+
+
+					</div>
+
+					<div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12 mt-5" style="text-align: center;">
+						<div id="Blog1" class="tabcontent" style="text-align: justify;">
+  							<h3 style="font-weight: bolder">7 Secrets of Entrepreneur Mindset</h3><br>
+  							<span class="" style="font-size: 15px;text-align:justify">Entrepreneur Mindset a set of skills used by people to identify the opportunities and generate economic benefits out of it, irrespective of various setbacks and learn a variety of things from it.<br><br>
+Entrepreneur Mindset is a group of -<br><br>
+<b>Beliefs</b> - To become a successful entrepreneur, one needs to have a strong belief in their own abilities, their business, the quality of the products they produce. A successful entrepreneur is aware of what actions he will take and on basis of that what will make an impact.<br><br>
+
+<b>Focus</b> - If there is one key trait of a successful entrepreneurial mindset, it is the ability to direct one's focus, to put time, energy, and attention toward what will help build the business and mitigate whatever will hold it back. Successful entrepreneurs focus on three things. First, they look for opportunities where others see only obstacles. Second, successful entrepreneurs focus with laser-like precision on the goal they wish to accomplish, not letting the negative advice of others deter them. Third, they manage risk and overcome fear by controlling their focus. Almost every study of the entrepreneurial mindset declares that the ability to manage risk is a key to success.<br><br>
+<b id="mainhead1">Secrets of an Entrepreneur Mindset-</b><br><br>
+	<b>1. Personal Responsibility</b>
+
+  							<span id="half1" style="display: inline-block;text-align:justify;">...</span>
+  							<span id="full1" style="display: none;text-align:justify;" class="text-left mt-4">This trait is it. I mean this removes all attempts to blame anyone for what takes place in your life. SucceGrowthssful entrepreneurs never allude to anything that anyone could have done to them. In fact, all the trials that they have, they looked at them as a blessing to learn from. Never give up control of their lives.<br><br>
+<b>2. Provide Value & Service</b><br><br>
+Successful Entrepreneurs know that value must be given. And by providing the value they know that value is to be returned.
+They practice the Law of Reciprocity. They know for sure that what they give out they shall receive. Successful entrepreneurs do not expect something for anything. They are constantly working to make themselves valuable, which of course attracts the personal associations that lead to greater success.<br><br>
+
+<b>3. Deal with Facts</b><br><br>
+Most people make their decisions about their lives and careers from emotion and assumptions. Successful entrepreneurs base their decisions on fact-based thinking.<br><br>
+
+<b>4. Result Oriented</b><br><br>
+Have you known anyone that is absolutely driven to succeed? No matter what the obstacle they keep going. And in most cases, it is because they have extraordinary clarity on the outcome. They took the time to clearly define what it is that they wanted to do. They stopped and thought about their life, and what it was that they wanted to accomplish and this gave them the drive to see the task all the way to its outcome<br><br>
+
+<b>5. Gratitude</b><br><br>
+You must look at all you have and realize how great what you have is as compared to the situation of many others.
+When you have this attitude, you stop suffering and complaining about the small stuff. On each receipt you pay out, write thank you. That's not only to thank the person, event, vendor, or customer for what's provided you but also to give a private thanks acknowledging that you have the abundance necessary to pay for the service, product, or event.<br><br>
+
+<b>6. Challenging Mind</b><br><br>
+Successful entrepreneurs have very high working standards they keep challenging themselves to be the best in the market with continuously changing trend and prove to be the stand out performer in the market along with facing various setbacks.<br><br>
+
+<b>7. Vision</b><br><br>
+Behind every entrepreneurial activity, there is a vision to generate some big returns, benefits to the economy and society, and how to turn small stuff into big outcome generators.
+</span></span><br>
+
+  							<p class="text-center btn btn-dark text-light rounded mt-5" id="btn1"> <a href="#mainhead1" style="text-decoration: none;color: white;"> Read More</a> </p>
+  							<p class="text-center btn btn-dark text-light rounded mt-5" id="btn21" style="display: none;"><a href="#mainhead1" style="text-decoration: none;color: white;"> See Less</a> </p>
+						</div>
+						<hr>
+						
+
+					</div>
+
+
+
+
+				</div>
+
+
+
+
+			<!--      ==================================== End  Blog Content   ======================================-->
+
+		</div>
+
+
+		<a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+	 <style id='preloader-plus-inline-css'>
+.preloader-plus {
+background-color: #ff9f43;
+ }
+body.complete > *:not(.preloader-plus),.preloader-plus {
+transition-duration: 1000ms,1000ms,0s;
+ }
+.preloader-plus * {
+color: #ffffff;
+ }
+.preloader-plus.complete {
+opacity: 0;
+ transform:  scale(1);
+ transition-delay: 0s,0s,1000ms;
+ }
+}
+.preloader-plus .prog-bar {
+height: 10px;
+ background-color: #ff9f43;
+ }
+.preloader-plus .prog-bar-bg {
+height: 10px;
+ background-color: #ffffff;
+ }
+.preloader-plus .prog-bar-wrapper {
+middle: 0;
+ padding-middle: 15%;
+ width: 300px;
+ }
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+#scrollPath {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 10px;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+#progressbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 10px;
+  border-radius: 10px;
+  height: 100%;
+  background: linear-gradient(to top, #008aff, #00ffe7);
+  animation: animate 5s linear infinite;
+}
+
+@keyframes animate {
+
+  0%,
+  100% {
+    filter: hue-rotate(0deg);
+  }
+
+  50% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+#progressbar:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, #008aff, #00ffe7);
+  filter: blur(1px);
+  border-radius: 10px;
+}
+
+#progressbar:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, #008aff, #00ffe7);
+  /*filter: blur(30px);*/
+  border-radius: 10px;
+}
+
+
+</style>
+
+<div id="progressbar"></div>
+<div id="scrollPath"></div>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="text/javascript">
+    let progress = document.getElementById('progressbar');
+    let totalHeight = document.body.scrollHeight - window.innerHeight;
+    window.onscroll = function () {
+      let progressHeigth = (window.pageYOffset / totalHeight) * 100;
+      progress.style.height = progressHeigth + "%";
+    }
+  </script>
+  <div class="prog-bar-wrapper middle">
+<div class="prog-bar-bg"></div>
+<div class="prog-bar"></div>
+</div>
+
+	<style type="text/css">
+  #footerset{
+    margin: 0%;
+  }
+  @media screen and  (max-width: 768px){
+    #footerset{
+      margin-left: 15%;
+    }
+  }
+  
+  @media screen and (max-width: 992px){
+    #footerset{
+      margin-left: 0%;
+    }
+  }
+</style>
+
+<footer id="footer" class="mt-5" style="color: white;background-color: black;">
+    <div class="footer-top" style="color: white;background-color: black;">
+      <div class="container" style="color: white;background-color: black;">
+        <div class="row">
+
+          <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 footer-info">
+            <h3>IdeaBoat</h3>
+            <p>
+              12, Rajulpark Soc,Opp AMTS Depo,<br>
+              Sabarmati,Ahmedabad<br><br>
+              <strong>Phone:</strong> +91 83202 09108<br>
+              <strong>Email:</strong> theideaboat0508@gmail.com<br>
+            </p>
+            <div class="social-links mt-3">
+              <a target="blank" href="https://www.facebook.com/IdeaBoat-103159031449758/" class="facebook"><i class="bx bxl-facebook"></i></a>
+              <a target="blank" href="https://instagram.com/theideaboat?igshid=1pifg20qoer5n" class="instagram"><i class="bx bxl-instagram"></i></a>
+              <a target="blank" href="assets/img/images/IdeaBoat.pdf" class="mail" download="download"><i class="bx bx-id-card"></i></a>
+            </div>
+          </div>
+
+          <div class="col-xl-2 col-lg-2 col-md-6 col-sm-12 footer-links" style="">
+            <h4>Useful Links</h4>
+            <ul>
+              <li id="footerset"><i class="bx bx-chevron-right"></i> <a href="index.php">Home</a></li>
+              <li id="footerset"><i class="bx bx-chevron-right"></i> <a href="about.php">About us</a></li>
+              <li id="footerset"><i class="bx bx-chevron-right"></i> <a href="services.php">Services</a></li>
+              <li id="footerset"><i class="bx bx-chevron-right"></i> <a href="events.php">Events</a></li>
+              <li id="footerset"><i class="bx bx-chevron-right"></i> <a href="blog.php">Blog</a></li>
+            </ul>
+          </div>
+
+          <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 footer-links" style="" >
+            <h4>Our Services</h4>
+            <ul>
+              <li id="footerset"><i class="bx bx-chevron-right"></i> <a href="services.php#webdevelopment">Web Design</a></li>
+              <li id="footerset"><i class="bx bx-chevron-right"></i> <a href="services.php#webdevelopment">Web Development</a></li>
+              <li id="footerset"><i class="bx bx-chevron-right"></i> <a href="services.php#graphicdesigning">Product Management</a></li>
+              <li id="footerset"><i class="bx bx-chevron-right"></i> <a href="services.php#graphicdesigning">Digital Card</a></li>
+              <li id="footerset"><i class="bx bx-chevron-right"></i> <a href="services.php#graphicdesigning">Product Catalogue</a></li>
+              <li id="footerset"><i class="bx bx-chevron-right"></i> <a href="services.php#graphicdesigning">Graphic Design</a></li>
+              <li id="footerset"><i class="bx bx-chevron-right"></i> <a href="services.php#graphicdesigning">App Development</a></li>
+              <li id="footerset"><i class="bx bx-chevron-right"></i> <a href="services.php#digitalmarketing">Social Media Marketing</a></li>
+            </ul>
+          </div>
+
+          <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 footer-newsletter" id="newsletter">
+            <h4>Our Newsletter</h4>
+            <p>Subscribe to our newsletter and stay tuned </p>
+            <form action="" method="POST">
+              <input type="email" name="email"><input type="submit" value="Subscribe" name="newsletter">
+            </form>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span style="color: skyblue;font-weight: 500 ">IdeaBoat</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+      
+        Designed by <a href="#">IdeaBoat</a>
+         
+      </div>
+    </div>
+  </footer>
+
+	<script>
+
+		$('document').ready(function(){
+			
+			$('#btn1').click(function(){
+				$('#half1').css('display',"none");
+				$('#btn1').css('display',"none");
+				$('#full1').css('display',"block");
+				$('#btn21').css('display',"inline-block");
+			});
+			$('#btn21').click(function(){
+				$('#half1').css('display',"block");
+				$('#btn1').css('display',"inline");
+				$('#full1').css('display',"none");
+				$('#btn21').css('display',"none");
+			});
+
+			
+		});
+
+
+	</script>
+
+
+</body>
+</html>
