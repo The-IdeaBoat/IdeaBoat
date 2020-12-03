@@ -204,92 +204,285 @@
 </head>
 
 <body>
+   <link rel="icon" href="images/logo.png">   
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
   <style type="text/css">
-  #footerset{
-    margin: 0%;
-  }
-  @media screen and  (max-width: 768px){
-    #footerset{
-      margin-left: 15%;
+   
+    .class {
+      -webkit-animation: none;
+      -moz-animation: none;
+      -o-animation: none;
+      animation: none;
     }
-  }
   
-  @media screen and (max-width: 992px){
-    #footerset{
-      margin-left: 0%;
+    .up {
+      background: linear-gradient(#55ACEE,white);
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
     }
-  }
-</style>
+  
+    #preloaderWindow{
+      background: linear-gradient(#55ACEE,white);
+      position: fixed;
+      height: 100vh;
+      width: 100%;
+      top: 0;
+      z-index: 999999999999999999999999999999999999;
+    }
 
-<footer id="footer" class="mt-5" style="color: white;background-color: black;">
-    <div class="footer-top" style="color: white;background-color: black;">
-      <div class="container" style="color: white;background-color: black;">
-        <div class="row">
+    #loaderbox {
+      position: absolute;
+      left: 47%;
+      top: 45%;
+      z-index: 1;
+      margin: -75px 0 0 -75px;
+    }
+    @media screen and (max-width: 400px){
+      #loaderbox{
+        left: 45%;
+      }
+    }
+    #loader1 {
+      position: absolute;
+      z-index: 2;
+      top: 0px;
+      left: 0px;
+      width: 50px;
+      height: 50px;
+      color: hsl(30,100%,60%);
+      font-size:40px;
+      -webkit-animation: l1 3s linear infinite;
+    }
 
-          <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 footer-info">
-            <h3>IdeaBoat</h3>
-            <p>
-              12, Rajulpark Soc,Opp AMTS Depo,<br>
-              Sabarmati,Ahmedabad<br><br>
-              <strong>Phone:</strong> +91 83202 09108<br>
-              <strong>Email:</strong> theideaboat0508@gmail.com<br>
-            </p>
-            <div class="social-links mt-3">
-              <a target="blank" href="https://www.facebook.com/IdeaBoat-103159031449758/" class="facebook"><i class="bx bxl-facebook"></i></a>
-              <a target="blank" href="https://instagram.com/theideaboat?igshid=1pifg20qoer5n" class="instagram"><i class="bx bxl-instagram"></i></a>
-              <a target="blank" href="assets/img/images/IdeaBoat.pdf" class="mail" download="download"><i class="bx bx-id-card"></i></a>
-            </div>
-          </div>
 
-          <div class="col-xl-2 col-lg-2 col-md-6 col-sm-12 footer-links" style="">
-            <h4>Useful Links</h4>
-            <ul>
-              <li id="footerset"><i class="bx bx-chevron-right"></i> <a href="index.php">Home</a></li>
-              <li id="footerset"><i class="bx bx-chevron-right"></i> <a href="about.php">About us</a></li>
-              <li id="footerset"><i class="bx bx-chevron-right"></i> <a href="services.php">Services</a></li>
-              <li id="footerset"><i class="bx bx-chevron-right"></i> <a href="events.php">Events</a></li>
-              <li id="footerset"><i class="bx bx-chevron-right"></i> <a href="blog.php">Blog</a></li>
-            </ul>
-          </div>
+    .loader11{
+      width:100px;
+      height:70px;
+      margin:50px auto;
+      position:absolute;
+      top: 50%;
+      left: 45%;
+    }
 
-          <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 footer-links" style="" >
-            <h4>Our Services</h4>
-            <ul>
-              <li id="footerset"><i class="bx bx-chevron-right"></i> <a href="services.php#webdevelopment">Web Design</a></li>
-              <li id="footerset"><i class="bx bx-chevron-right"></i> <a href="services.php#webdevelopment">Web Development</a></li>
-              <li id="footerset"><i class="bx bx-chevron-right"></i> <a href="services.php#graphicdesigning">Product Management</a></li>
-              <li id="footerset"><i class="bx bx-chevron-right"></i> <a href="services.php#graphicdesigning">Digital Card</a></li>
-              <li id="footerset"><i class="bx bx-chevron-right"></i> <a href="services.php#graphicdesigning">Product Catalogue</a></li>
-              <li id="footerset"><i class="bx bx-chevron-right"></i> <a href="services.php#graphicdesigning">Graphic Design</a></li>
-              <li id="footerset"><i class="bx bx-chevron-right"></i> <a href="services.php#graphicdesigning">App Development</a></li>
-              <li id="footerset"><i class="bx bx-chevron-right"></i> <a href="services.php#digitalmarketing">Social Media Marketing</a></li>
-            </ul>
-          </div>
+    @media screen and (max-width: 400px){
+      .loader11{
+        left: 35%;
+      }
+    }
 
-          <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 footer-newsletter" id="newsletter">
-            <h4>Our Newsletter</h4>
-            <p>Subscribe to our newsletter and stay tuned </p>
-            <form action="" method="POST">
-              <input type="email" name="email"><input type="submit" value="Subscribe" name="newsletter">
-            </form>
+    .loader11 span{
+      display:block;
+      width:5px;
+      height:10px;
+      background:white;
+      position:absolute;
+      bottom:0;
+      animation:loading-11 3s infinite ease-in-out
+    }
 
-          </div>
+    .anchor-user {
+      font-size: 3em;
+      position: relative;
+      bottom: 0;
+      right: 20px;
+      color: #000;
+    }
 
+    .anchor-user:hover {
+      color: #039be5;;
+      -webkit-transition: color .5s ease;
+      -moz-transition: color .5s ease;
+      -ms-transition: color .5s ease;
+      -o-transition: color .5s ease;
+      transition: color .5s ease;
+    }
+
+    .loader11 span:nth-child(2){
+      left:11px;
+      animation-delay:.2s
+    }
+
+    .loader11 span:nth-child(3){
+      left:22px;
+      animation-delay:.4s;
+    }
+
+    .loader11 span:nth-child(4){
+      left:33px;
+      animation-delay:.6s;
+    }
+
+    .loader11 span:nth-child(5){
+      left:44px;
+      animation-delay:.8s;
+    }
+
+    .loader11 span:nth-child(6){
+      left:55px;
+      animation-delay:1s;
+    }
+
+    .loader11 span:nth-child(7){
+      left:66px;
+      animation-delay:1.2s;
+    }
+
+    .loader11 span:nth-child(8){
+      left:77px;
+      animation-delay:1.4s;
+    }
+
+    .loader11 span:nth-child(9){
+      left:88px;
+      animation-delay:1.6s;
+    }
+
+
+    @-webkit-keyframes l1 {
+      0%   {opacity: 1;}
+  
+      50%  {opacity: 0;}
+  
+      100% {opacity: 1;}
+    }
+
+    @-webkit-keyframes loading-11{
+      0%{
+        height:10px;
+        transform:translateY(0);
+        background:#55ACEE;
+      }
+
+      25%{
+        height:60px;
+        transform:translateY(15px);
+        background:#55ACEE;
+      }
+
+      50%{
+        height:10px;
+        transform:translateY(-10px);
+        background:#55ACEE;
+      }
+
+      100%{
+        height:10px;
+        transform:translateY(0);
+        background:#55ACEE;
+      }
+
+    }
+
+    @keyframes loading-11{
+      0%{
+        height:10px;
+        transform:translateY(0);
+        background:#55ACEE;
+      }
+
+      25%{
+        height:60px;
+        transform:translateY(15px);
+        background:#55ACEE;
+      }
+
+      50%{
+        height:10px;
+        transform:translateY(-10px);
+        background:#55ACEE;
+      }
+
+      100%{
+        height:10px;
+        transform:translateY(0);
+        background:#55ACEE;
+      }
+    }
+
+
+
+    @media (max-height: 300px) {
+      .text {
+        font-size: 3em;
+      }
+      .left-text-con,
+      .right-text-con {
+        top: 20%;
+      }
+    }
+
+  </style>
+
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+  <div id="preloaderWindow">
+    <div class="up">
+      <div id="loaderbox">
+        <div id="loader1" class="fas"><img src="assets/img/images/logo.png" height="200px" width="200px">
         </div>
       </div>
-    </div>
-
-    <div class="container">
-      <div class="copyright">
-        &copy; Copyright <strong><span style="color: skyblue;font-weight: 500 ">IdeaBoat</span></strong>. All Rights Reserved
+      <div class="loader11">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
-      <div class="credits">
+    </div>
+    <div class="loading">
       
-        Designed by <a href="#">IdeaBoat</a>
-         
-      </div>
     </div>
-  </footer>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+  <script type="text/javascript">
+
+   $(document).ready(function()
+    { 
+      setTimeout(function(){
+         $('#preloaderWindow').css('display','none');
+         
+       },3000);
+
+    })
+
+      
+//   $(window).load(function() {
+ 
+
+//   setTimeout(function() {
+//     var currentPositon = $(".loading").css("transform");
+//     console.log(currentPositon)
+//     $(".loading").addClass("class").css("transform", currentPositon).css("transform", "none");
+//     goUp();
+    
+//   }, 1000);
+
+ 
+ 
+//   function goUp() {
+//     $(".up").show();
+//     $(".up").animate({
+//       top: "-=200px",
+//       animation: "linear"
+//     }, 2000, function() {
+//       $(this).hide();
+//       show();
+//     });
+//   }
+// });
+  </script>
+
 
   <!-- ======= Header ======= -->
 
@@ -506,11 +699,11 @@
       <div>
   
           <ul style="list-style: none;font-size: 40px;font-family: 'arial';" class="">
-            <li><a href="index.php" style="font-style: 40px;text-decoration: none;color: #fff;">Home</a></li>
-            <li><a href="services.php" style="font-style: 40px;text-decoration: none;color: #fff;">Services</a></li>
-            <li><a href="blog.php" style="font-style: 40px;text-decoration: none;color: #fff;">Blogs</a></li>
-            <li><a href="about.php" style="font-style: 40px;text-decoration: none;color: #fff;">About Us</a></li>
-            <li><a href="events.php" style="font-style: 40px;text-decoration: none;color: #fff;">Events</a></li>
+            <li><a href="index.html" style="font-style: 40px;text-decoration: none;color: #fff;">Home</a></li>
+            <li><a href="services.html" style="font-style: 40px;text-decoration: none;color: #fff;">Services</a></li>
+            <li><a href="blog.html" style="font-style: 40px;text-decoration: none;color: #fff;">Blogs</a></li>
+            <li><a href="about.html" style="font-style: 40px;text-decoration: none;color: #fff;">About Us</a></li>
+            <li><a href="events.html" style="font-style: 40px;text-decoration: none;color: #fff;">Events</a></li>
             
           </ul>
 
@@ -1134,25 +1327,25 @@ middle: 0;
           <div class="col-xl-2 col-lg-2 col-md-6 col-sm-12 footer-links" style="">
             <h4>Useful Links</h4>
             <ul>
-              <li id="footerset"><i class="bx bx-chevron-right"></i> <a href="index.php">Home</a></li>
-              <li id="footerset"><i class="bx bx-chevron-right"></i> <a href="about.php">About us</a></li>
-              <li id="footerset"><i class="bx bx-chevron-right"></i> <a href="services.php">Services</a></li>
-              <li id="footerset"><i class="bx bx-chevron-right"></i> <a href="events.php">Events</a></li>
-              <li id="footerset"><i class="bx bx-chevron-right"></i> <a href="blog.php">Blog</a></li>
+              <li id="footerset"><i class="bx bx-chevron-right"></i> <a href="index.html">Home</a></li>
+              <li id="footerset"><i class="bx bx-chevron-right"></i> <a href="about.html">About us</a></li>
+              <li id="footerset"><i class="bx bx-chevron-right"></i> <a href="services.html">Services</a></li>
+              <li id="footerset"><i class="bx bx-chevron-right"></i> <a href="events.html">Events</a></li>
+              <li id="footerset"><i class="bx bx-chevron-right"></i> <a href="blog.html">Blog</a></li>
             </ul>
           </div>
 
           <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 footer-links" style="" >
             <h4>Our Services</h4>
             <ul>
-              <li id="footerset"><i class="bx bx-chevron-right"></i> <a href="services.php#webdevelopment">Web Design</a></li>
-              <li id="footerset"><i class="bx bx-chevron-right"></i> <a href="services.php#webdevelopment">Web Development</a></li>
-              <li id="footerset"><i class="bx bx-chevron-right"></i> <a href="services.php#graphicdesigning">Product Management</a></li>
-              <li id="footerset"><i class="bx bx-chevron-right"></i> <a href="services.php#graphicdesigning">Digital Card</a></li>
-              <li id="footerset"><i class="bx bx-chevron-right"></i> <a href="services.php#graphicdesigning">Product Catalogue</a></li>
-              <li id="footerset"><i class="bx bx-chevron-right"></i> <a href="services.php#graphicdesigning">Graphic Design</a></li>
-              <li id="footerset"><i class="bx bx-chevron-right"></i> <a href="services.php#graphicdesigning">App Development</a></li>
-              <li id="footerset"><i class="bx bx-chevron-right"></i> <a href="services.php#digitalmarketing">Social Media Marketing</a></li>
+              <li id="footerset"><i class="bx bx-chevron-right"></i> <a href="services.html#webdevelopment">Web Design</a></li>
+              <li id="footerset"><i class="bx bx-chevron-right"></i> <a href="services.html#webdevelopment">Web Development</a></li>
+              <li id="footerset"><i class="bx bx-chevron-right"></i> <a href="services.html#graphicdesigning">Product Management</a></li>
+              <li id="footerset"><i class="bx bx-chevron-right"></i> <a href="services.html#graphicdesigning">Digital Card</a></li>
+              <li id="footerset"><i class="bx bx-chevron-right"></i> <a href="services.html#graphicdesigning">Product Catalogue</a></li>
+              <li id="footerset"><i class="bx bx-chevron-right"></i> <a href="services.html#graphicdesigning">Graphic Design</a></li>
+              <li id="footerset"><i class="bx bx-chevron-right"></i> <a href="services.html#graphicdesigning">App Development</a></li>
+              <li id="footerset"><i class="bx bx-chevron-right"></i> <a href="services.html#digitalmarketing">Social Media Marketing</a></li>
             </ul>
           </div>
 
